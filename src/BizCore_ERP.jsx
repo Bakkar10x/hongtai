@@ -74,11 +74,11 @@ function useOnlineStatus() {
 // ============================================================
 const theme = {
   colors: {
-    bg: "#0A0C10",
-    surface: "#111318",
-    surfaceAlt: "#161A22",
-    border: "#1E2330",
-    borderLight: "#252B3B",
+    bg: "#0B1120",
+    surface: "#131D33",
+    surfaceAlt: "#1A2640",
+    border: "#26334F",
+    borderLight: "#34446A",
     accent: "#3B82F6",
     accentGlow: "rgba(59,130,246,0.18)",
     accentDim: "#1E40AF",
@@ -105,7 +105,7 @@ const GlobalStyles = () => (
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html, body, #root { height: 100%; }
     body {
-      background: #0A0C10;
+      background: #0B1120;
       color: #E2E8F0;
       font-family: 'Sora', sans-serif;
       font-size: 14px;
@@ -113,7 +113,7 @@ const GlobalStyles = () => (
       overflow-x: hidden;
     }
     ::-webkit-scrollbar { width: 6px; height: 10px; }
-    ::-webkit-scrollbar-track { background: #111318; border-radius: 4px; }
+    ::-webkit-scrollbar-track { background: #131D33; border-radius: 4px; }
     ::-webkit-scrollbar-thumb { background: #3B82F6; border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: #2563EB; }
     
@@ -134,8 +134,8 @@ const GlobalStyles = () => (
     input, select, textarea {
       font-family: 'Sora', sans-serif;
       font-size: 13px;
-      background: #111318;
-      border: 1px solid #1E2330;
+      background: #131D33;
+      border: 1px solid #26334F;
       border-radius: 8px;
       color: #E2E8F0;
       padding: 9px 12px;
@@ -148,11 +148,11 @@ const GlobalStyles = () => (
       box-shadow: 0 0 0 3px rgba(59,130,246,0.12);
     }
     input::placeholder { color: #64748B; }
-    select option { background: #111318; }
+    select option { background: #131D33; }
     
     table { border-collapse: collapse; width: 100%; }
-    th { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: #64748B; padding: 10px 14px; text-align: left; border-bottom: 1px solid #1E2330; background: #0D0F14; }
-    td { padding: 12px 14px; border-bottom: 1px solid #111318; color: #CBD5E1; font-size: 13px; }
+    th { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: #64748B; padding: 10px 14px; text-align: left; border-bottom: 1px solid #26334F; background: #0E1629; }
+    td { padding: 12px 14px; border-bottom: 1px solid #131D33; color: #CBD5E1; font-size: 13px; }
     tr:hover td { background: rgba(255,255,255,0.02); }
     tr:last-child td { border-bottom: none; }
     
@@ -164,8 +164,8 @@ const GlobalStyles = () => (
     }
     .btn-primary { background: #3B82F6; color: white; }
     .btn-primary:hover { background: #2563EB; box-shadow: 0 4px 14px rgba(59,130,246,0.4); transform: translateY(-1px); }
-    .btn-secondary { background: #161A22; color: #94A3B8; border: 1px solid #1E2330; }
-    .btn-secondary:hover { background: #1E2330; color: #E2E8F0; }
+    .btn-secondary { background: #1A2640; color: #94A3B8; border: 1px solid #26334F; }
+    .btn-secondary:hover { background: #26334F; color: #E2E8F0; }
     .btn-success { background: #10B981; color: white; }
     .btn-success:hover { background: #059669; box-shadow: 0 4px 14px rgba(16,185,129,0.3); }
     .btn-danger { background: rgba(239,68,68,0.15); color: #EF4444; border: 1px solid rgba(239,68,68,0.2); }
@@ -186,9 +186,9 @@ const GlobalStyles = () => (
     .badge-gray { background: rgba(100,116,139,0.15); color: #94A3B8; border: 1px solid rgba(100,116,139,0.2); }
     .badge-tds { background: rgba(6,182,212,0.15); color: #06B6D4; border: 1px solid rgba(6,182,212,0.2); }
     
-    .card { background: #111318; border: 1px solid #1E2330; border-radius: 12px; }
+    .card { background: #131D33; border: 1px solid #26334F; border-radius: 12px; }
     .card-hover { transition: border-color 0.2s, box-shadow 0.2s; }
-    .card-hover:hover { border-color: #252B3B; box-shadow: 0 4px 24px rgba(0,0,0,0.3); }
+    .card-hover:hover { border-color: #34446A; box-shadow: 0 4px 24px rgba(0,0,0,0.3); }
     
     .modal-overlay {
       position: fixed; inset: 0; background: rgba(0,0,0,0.7); backdrop-filter: blur(4px);
@@ -196,8 +196,8 @@ const GlobalStyles = () => (
       padding: 24px 20px; overflow-y: auto;
       animation: fadeIn 0.2s ease;
     }
-    .modal { background: #111318; border: 1px solid #1E2330; border-radius: 16px; max-height: calc(100vh - 48px); overflow: hidden; display: flex; flex-direction: column; animation: fadeIn 0.2s ease; }
-    .modal-header { display: flex; align-items: center; justify-content: space-between; padding: 20px 24px; border-bottom: 1px solid #1E2330; flex-shrink: 0; background: #111318; border-radius: 16px 16px 0 0; }
+    .modal { background: #131D33; border: 1px solid #26334F; border-radius: 16px; max-height: calc(100vh - 48px); overflow: hidden; display: flex; flex-direction: column; animation: fadeIn 0.2s ease; }
+    .modal-header { display: flex; align-items: center; justify-content: space-between; padding: 20px 24px; border-bottom: 1px solid #26334F; flex-shrink: 0; background: #131D33; border-radius: 16px 16px 0 0; }
     .modal-body { padding: 24px; overflow-y: auto; flex: 1; min-height: 0; }
     
     .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-family: 'IBM Plex Mono', monospace; }
@@ -205,7 +205,7 @@ const GlobalStyles = () => (
     .mono { font-family: 'IBM Plex Mono', monospace; }
     
     .shimmer {
-      background: linear-gradient(90deg, #111318 25%, #161A22 50%, #111318 75%);
+      background: linear-gradient(90deg, #131D33 25%, #1A2640 50%, #131D33 75%);
       background-size: 200% 100%;
       animation: shimmer 1.5s infinite;
     }
@@ -216,14 +216,14 @@ const GlobalStyles = () => (
       animation: pulse 2s infinite;
     }
     
-    .progress-bar { height: 4px; background: #1E2330; border-radius: 2px; overflow: hidden; }
+    .progress-bar { height: 4px; background: #26334F; border-radius: 2px; overflow: hidden; }
     .progress-fill { height: 100%; border-radius: 2px; transition: width 0.5s ease; }
     
     .tooltip-wrap { position: relative; }
     .tooltip-wrap:hover .tooltip { opacity: 1; visibility: visible; transform: translateY(0); }
     .tooltip {
       position: absolute; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%) translateY(4px);
-      background: #1E2330; color: #E2E8F0; padding: 4px 8px; border-radius: 6px;
+      background: #26334F; color: #E2E8F0; padding: 4px 8px; border-radius: 6px;
       font-size: 11px; white-space: nowrap; opacity: 0; visibility: hidden;
       transition: all 0.15s; z-index: 100; pointer-events: none;
     }
@@ -239,23 +239,23 @@ const GlobalStyles = () => (
     .sidebar-item.active .sidebar-icon { color: #3B82F6; }
     
     .stat-card {
-      background: #111318; border: 1px solid #1E2330; border-radius: 12px;
+      background: #131D33; border: 1px solid #26334F; border-radius: 12px;
       padding: 20px; transition: all 0.2s;
     }
-    .stat-card:hover { border-color: #252B3B; transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,0.4); }
+    .stat-card:hover { border-color: #34446A; transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,0.4); }
     
     .chart-bar { transition: height 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
     
     .search-input {
-      background: #161A22 !important;
-      border-color: #1E2330 !important;
+      background: #1A2640 !important;
+      border-color: #26334F !important;
       padding-left: 36px !important;
     }
     
     .form-label { font-size: 12px; font-weight: 600; color: #64748B; margin-bottom: 6px; display: block; text-transform: uppercase; letter-spacing: 0.06em; font-family: 'IBM Plex Mono', monospace; }
     .form-group { margin-bottom: 16px; }
     
-    .divider { height: 1px; background: #1E2330; margin: 0; }
+    .divider { height: 1px; background: #26334F; margin: 0; }
     
     .scrollable { overflow-y: auto; }
     
@@ -351,6 +351,76 @@ const GlobalStyles = () => (
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
       }
       .bz-content h2 { font-size: 16px !important; }
+    }
+    /* ============================================================= */
+
+    /* ================= MODERN NAVY THEME (added) ================= */
+    body {
+      background:
+        radial-gradient(1200px 600px at 100% -10%, rgba(99,102,241,0.10), transparent 60%),
+        radial-gradient(900px 500px at -10% 110%, rgba(59,130,246,0.08), transparent 60%),
+        #0B1120;
+      background-attachment: fixed;
+    }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #3B82F6, #6366F1); border-radius: 8px; }
+
+    /* Sidebar */
+    .bz-sidebar {
+      background: linear-gradient(180deg, #101A33 0%, #0B1326 100%) !important;
+      border-right: 1px solid rgba(148,163,184,0.10) !important;
+    }
+    .sidebar-item { border-radius: 10px; }
+    .sidebar-item:hover { background: rgba(148,163,184,0.08); color: #CBD5E1; }
+    .sidebar-item.active {
+      background: linear-gradient(90deg, rgba(59,130,246,0.22), rgba(99,102,241,0.08));
+      color: #93C5FD; box-shadow: inset 3px 0 0 #3B82F6;
+    }
+    .sidebar-item.active .sidebar-icon { color: #93C5FD; }
+
+    /* Header: glass */
+    .bz-header {
+      background: rgba(14,22,41,0.72) !important;
+      backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(148,163,184,0.10) !important;
+    }
+
+    /* Cards */
+    .card, .stat-card {
+      background: linear-gradient(180deg, #17223D 0%, #131D33 100%);
+      border: 1px solid rgba(148,163,184,0.12);
+      border-radius: 14px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), 0 8px 24px rgba(2,6,23,0.35);
+    }
+    .card-hover:hover, .stat-card:hover {
+      border-color: rgba(59,130,246,0.35);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), 0 12px 32px rgba(2,6,23,0.5), 0 0 0 1px rgba(59,130,246,0.10);
+    }
+
+    /* Buttons */
+    .btn { border-radius: 10px; }
+    .btn-primary { background: linear-gradient(135deg, #3B82F6 0%, #6366F1 100%); box-shadow: 0 4px 14px rgba(59,130,246,0.25); }
+    .btn-primary:hover { background: linear-gradient(135deg, #2563EB 0%, #4F46E5 100%); box-shadow: 0 6px 20px rgba(99,102,241,0.40); }
+    .btn-success { background: linear-gradient(135deg, #10B981 0%, #059669 100%); }
+    .btn-secondary { background: rgba(30,41,66,0.85); border: 1px solid rgba(148,163,184,0.16); color: #CBD5E1; }
+    .btn-secondary:hover { background: #26334F; border-color: rgba(148,163,184,0.28); color: #F1F5F9; }
+
+    /* Inputs */
+    input, select, textarea { background: #0F1830; border: 1px solid rgba(148,163,184,0.16); border-radius: 10px; }
+    input:hover, select:hover, textarea:hover { border-color: rgba(148,163,184,0.28); }
+    input:focus, select:focus, textarea:focus { border-color: #6366F1; box-shadow: 0 0 0 3px rgba(99,102,241,0.18); }
+    select option { background: #131D33; }
+
+    /* Tables */
+    th { background: rgba(14,22,41,0.85); border-bottom: 1px solid rgba(148,163,184,0.12); color: #7C8BA5; }
+    td { border-bottom: 1px solid rgba(148,163,184,0.07); }
+    tr:hover td { background: rgba(59,130,246,0.05); }
+
+    /* Modals */
+    .modal-overlay { background: rgba(2,6,23,0.72); }
+    .bz-modal, .modal {
+      border: 1px solid rgba(148,163,184,0.14) !important;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.55);
     }
     /* ============================================================= */
     @media print {
@@ -537,8 +607,8 @@ const Toast = ({ toasts, removeToast }) => (
   <div style={{ position: "fixed", bottom: 24, right: 24, zIndex: 9999, display: "flex", flexDirection: "column", gap: 8 }}>
     {toasts.map(t => (
       <div key={t.id} className="fade-in" style={{
-        background: t.type === "success" ? "#111318" : t.type === "error" ? "#111318" : "#111318",
-        border: `1px solid ${t.type === "success" ? "rgba(16,185,129,0.3)" : t.type === "error" ? "rgba(239,68,68,0.3)" : "#1E2330"}`,
+        background: t.type === "success" ? "#131D33" : t.type === "error" ? "#131D33" : "#131D33",
+        border: `1px solid ${t.type === "success" ? "rgba(16,185,129,0.3)" : t.type === "error" ? "rgba(239,68,68,0.3)" : "#26334F"}`,
         borderRadius: 10, padding: "12px 16px", display: "flex", alignItems: "center", gap: 10,
         boxShadow: "0 8px 32px rgba(0,0,0,0.5)", minWidth: 280, maxWidth: 360,
       }}>
@@ -659,7 +729,7 @@ const DonutChart = ({ data, size = 120 }) => {
   const r = 45, cx = 60, cy = 60, circumference = 2 * Math.PI * r;
   return (
     <svg viewBox="0 0 120 120" width={size} height={size}>
-      <circle cx={cx} cy={cy} r={r} fill="none" stroke="#1E2330" strokeWidth="12" />
+      <circle cx={cx} cy={cy} r={r} fill="none" stroke="#26334F" strokeWidth="12" />
       {data.map((d, i) => {
         const pct = d.value / total;
         const dash = circumference * pct;
@@ -699,15 +769,15 @@ const Pagination = ({ page, total, perPage, onChange }) => {
 
   const btnStyle = (active) => ({
     minWidth: 32, height: 32, display: "inline-flex", alignItems: "center", justifyContent: "center",
-    borderRadius: 6, border: `1px solid ${active ? "#3B82F6" : "#1E2330"}`,
-    background: active ? "#3B82F6" : "#161A22",
+    borderRadius: 6, border: `1px solid ${active ? "#3B82F6" : "#26334F"}`,
+    background: active ? "#3B82F6" : "#1A2640",
     color: active ? "white" : "#64748B",
     fontSize: 12, fontFamily: "IBM Plex Mono, monospace", fontWeight: 500,
     cursor: "pointer", padding: "0 8px", transition: "all 0.15s",
   });
 
   return (
-    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "12px 16px", borderTop: "1px solid #1E2330" }}>
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "12px 16px", borderTop: "1px solid #26334F" }}>
       <span style={{ fontSize: 12, color: "#64748B", fontFamily: "IBM Plex Mono" }}>
         {total === 0 ? "No records" : <>Showing <strong style={{ color: "#94A3B8" }}>{Math.min((page - 1) * perPage + 1, total)}–{Math.min(page * perPage, total)}</strong> of <strong style={{ color: "#94A3B8" }}>{total}</strong></>}
       </span>
@@ -734,16 +804,16 @@ const Modal = ({ open, onClose, title, children, width = 600 }) => {
   return createPortal(
     <div className="modal-overlay" onClick={e => e.target === e.currentTarget && onClose()}>
       <div className="bz-modal" style={{
-        width: "100%", maxWidth: width, background: "#111318",
-        border: "1px solid #1E2330", borderRadius: 16,
+        width: "100%", maxWidth: width, background: "#131D33",
+        border: "1px solid #26334F", borderRadius: 16,
         display: "flex", flexDirection: "column",
         maxHeight: "calc(100vh - 48px)", overflow: "hidden",
         animation: "fadeIn 0.2s ease", flexShrink: 0,
       }}>
         <div className="bz-modal-head" style={{
           display: "flex", alignItems: "center", justifyContent: "space-between",
-          padding: "18px 24px", borderBottom: "1px solid #1E2330",
-          flexShrink: 0, background: "#111318", borderRadius: "16px 16px 0 0",
+          padding: "18px 24px", borderBottom: "1px solid #26334F",
+          flexShrink: 0, background: "#131D33", borderRadius: "16px 16px 0 0",
         }}>
           <h3 style={{ fontSize: 16, fontWeight: 700, color: "#E2E8F0", margin: 0 }}>{title}</h3>
           <button onClick={onClose} className="btn btn-secondary btn-icon">
@@ -819,12 +889,12 @@ const Sidebar = ({ active, setActive, collapsed, setCollapsed }) => {
 
   return (
     <div className={`bz-sidebar ${collapsed ? "" : "bz-open"}`} style={{
-      width: collapsed ? 60 : 220, flexShrink: 0, background: "#0D0F14",
-      borderRight: "1px solid #1E2330", display: "flex", flexDirection: "column",
+      width: collapsed ? 60 : 220, flexShrink: 0, background: "#0E1629",
+      borderRight: "1px solid #26334F", display: "flex", flexDirection: "column",
       height: "100vh", position: "sticky", top: 0, transition: "width 0.25s ease", overflow: "hidden",
     }}>
       {/* Logo */}
-      <div style={{ padding: collapsed ? "20px 12px" : "20px 16px", borderBottom: "1px solid #1E2330", display: "flex", alignItems: "center", gap: 10 }}>
+      <div style={{ padding: collapsed ? "20px 12px" : "20px 16px", borderBottom: "1px solid #26334F", display: "flex", alignItems: "center", gap: 10 }}>
         <div style={{ width: 32, height: 32, borderRadius: 8, background: "linear-gradient(135deg, #3B82F6, #8B5CF6)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontSize: 14, fontWeight: 800, color: "white" }}>B</div>
         {!collapsed && <div>
           <div style={{ fontSize: 14, fontWeight: 800, color: "#E2E8F0", lineHeight: 1.2 }}>BizCore</div>
@@ -857,7 +927,7 @@ const Sidebar = ({ active, setActive, collapsed, setCollapsed }) => {
       </div>
 
       {/* User */}
-      <div style={{ padding: "12px 8px", borderTop: "1px solid #1E2330" }}>
+      <div style={{ padding: "12px 8px", borderTop: "1px solid #26334F" }}>
         <button onClick={() => setCollapsed(!collapsed)} className="sidebar-item" style={{ width: "100%", border: "none", background: "none", justifyContent: collapsed ? "center" : "flex-start" }}>
           <Icon name="menu" size={17} />
           {!collapsed && <span>Collapse</span>}
@@ -892,7 +962,7 @@ const Header = ({ page, showNotif, setShowNotif }) => {
   const titles = { dashboard: "Dashboard", sales: "Sales Management", purchases: "Purchase Management", inventory: "Inventory", customers: "Customers", suppliers: "Suppliers", finance: "Financial Overview", reports: "Reports", ai: "AI Analytics", logs: "Activity Logs", settings: "Settings", recycle: "Recycle Bin", accounts: "Accounts & Ledger" };
 
   return (
-    <div className="bz-header" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "14px 28px", borderBottom: "1px solid #1E2330", background: "#0D0F14", position: "sticky", top: 0, zIndex: 100 }}>
+    <div className="bz-header" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "14px 28px", borderBottom: "1px solid #26334F", background: "#0E1629", position: "sticky", top: 0, zIndex: 100 }}>
       <div>
         <h1 style={{ fontSize: 16, fontWeight: 700, color: "#E2E8F0" }}>{titles[page] || page}</h1>
         <p style={{ fontSize: 12, color: "#64748B", fontFamily: "IBM Plex Mono" }}>{new Date().toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" })}</p>
@@ -901,16 +971,16 @@ const Header = ({ page, showNotif, setShowNotif }) => {
         <div style={{ position: "relative" }}>
           <button className="btn btn-secondary btn-icon" onClick={() => setShowNotif(!showNotif)} style={{ position: "relative" }}>
             <Icon name="bell" size={16} />
-            {notifCount > 0 && <span style={{ position: "absolute", top: 3, right: 3, width: 7, height: 7, borderRadius: "50%", background: "#EF4444", border: "1.5px solid #0D0F14" }} />}
+            {notifCount > 0 && <span style={{ position: "absolute", top: 3, right: 3, width: 7, height: 7, borderRadius: "50%", background: "#EF4444", border: "1.5px solid #0E1629" }} />}
           </button>
           {showNotif && (
-            <div className="bz-notif" style={{ position: "absolute", right: 0, top: "calc(100% + 8px)", background: "#111318", border: "1px solid #1E2330", borderRadius: 12, width: 320, boxShadow: "0 16px 48px rgba(0,0,0,0.5)", zIndex: 200, animation: "fadeIn 0.2s ease" }}>
-              <div style={{ padding: "14px 16px", borderBottom: "1px solid #1E2330", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            <div className="bz-notif" style={{ position: "absolute", right: 0, top: "calc(100% + 8px)", background: "#131D33", border: "1px solid #26334F", borderRadius: 12, width: 320, boxShadow: "0 16px 48px rgba(0,0,0,0.5)", zIndex: 200, animation: "fadeIn 0.2s ease" }}>
+              <div style={{ padding: "14px 16px", borderBottom: "1px solid #26334F", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                 <span style={{ fontSize: 13, fontWeight: 600, color: "#E2E8F0" }}>Notifications</span>
                 <span className="badge badge-danger">{notifCount}</span>
               </div>
               {lowStock.map(p => (
-                <div key={p.id} style={{ padding: "12px 16px", borderBottom: "1px solid #111318", display: "flex", gap: 10, alignItems: "center" }}>
+                <div key={p.id} style={{ padding: "12px 16px", borderBottom: "1px solid #131D33", display: "flex", gap: 10, alignItems: "center" }}>
                   <div style={{ width: 32, height: 32, borderRadius: 8, background: "rgba(245,158,11,0.1)", border: "1px solid rgba(245,158,11,0.2)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, color: "#F59E0B" }}>
                     <Icon name="alert" size={15} />
                   </div>
@@ -1079,7 +1149,7 @@ const Dashboard = () => {
           <div style={{ fontSize: 14, fontWeight: 600, color: "#E2E8F0", marginBottom: 16 }}>Top Products</div>
           {topProducts.map((tp, i) => (
             <div key={tp.product.id} style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
-              <div style={{ width: 24, height: 24, borderRadius: 6, background: "#161A22", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, fontFamily: "IBM Plex Mono", color: "#64748B" }}>{i + 1}</div>
+              <div style={{ width: 24, height: 24, borderRadius: 6, background: "#1A2640", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, fontFamily: "IBM Plex Mono", color: "#64748B" }}>{i + 1}</div>
               <div style={{ flex: 1, minWidth: 0 }}>
                 <div style={{ fontSize: 12, color: "#CBD5E1", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{tp.product.name}</div>
                 <div style={{ fontSize: 11, color: "#64748B", fontFamily: "IBM Plex Mono" }}>{curr}{tp.revenue.toLocaleString("en-US", { maximumFractionDigits: 0 })}</div>
@@ -1133,12 +1203,12 @@ const Dashboard = () => {
 
       {/* Recent Activity */}
       <div className="card" style={{ marginTop: 16 }}>
-        <div style={{ padding: "16px 20px", borderBottom: "1px solid #1E2330", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        <div style={{ padding: "16px 20px", borderBottom: "1px solid #26334F", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <div style={{ fontSize: 14, fontWeight: 600, color: "#E2E8F0" }}>Recent Activity</div>
         </div>
         <div>
           {data.activityLogs.map((log, i) => (
-            <div key={log.id} style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 20px", borderBottom: i < data.activityLogs.length - 1 ? "1px solid #111318" : "none" }}>
+            <div key={log.id} style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 20px", borderBottom: i < data.activityLogs.length - 1 ? "1px solid #131D33" : "none" }}>
               <div style={{ width: 8, height: 8, borderRadius: "50%", background: { sale: "#10B981", product: "#3B82F6", stock: "#F59E0B", purchase: "#8B5CF6", customer: "#EF4444" }[log.type] || "#64748B" }} />
               <div style={{ flex: 1 }}>
                 <span style={{ fontSize: 13, color: "#CBD5E1" }}><strong style={{ color: "#E2E8F0" }}>{log.user}</strong> {log.action}</span>
@@ -1205,13 +1275,13 @@ const SearchableDropdown = ({ value, onChange, options, placeholder = "Search…
           style={{
             display: "flex", alignItems: "center", justifyContent: "space-between",
             padding: "6px 10px", borderRadius: 8, cursor: "pointer",
-            background: "#111318", border: "1px solid #1E2330",
+            background: "#131D33", border: "1px solid #26334F",
             color: selected ? "#E2E8F0" : "#64748B", fontSize: 13,
             transition: "border-color 0.2s",
             minHeight: 32,
           }}
-          onMouseEnter={e => e.currentTarget.style.borderColor = "#252B3B"}
-          onMouseLeave={e => e.currentTarget.style.borderColor = "#1E2330"}
+          onMouseEnter={e => e.currentTarget.style.borderColor = "#34446A"}
+          onMouseLeave={e => e.currentTarget.style.borderColor = "#26334F"}
         >
           <div style={{ display: "flex", alignItems: "flex-start", gap: 8, overflow: "hidden" }}>
             <Icon name="search" size={13} color="#475569" style={{ flexShrink: 0, marginTop: 2 }} />
@@ -1249,7 +1319,7 @@ const SearchableDropdown = ({ value, onChange, options, placeholder = "Search…
       {open && (
         <div style={{
           position: "absolute", top: "calc(100% + 4px)", left: 0, right: 0, zIndex: 9999,
-          background: "#161A22", border: "1px solid #252B3B", borderRadius: 10,
+          background: "#1A2640", border: "1px solid #34446A", borderRadius: 10,
           boxShadow: "0 8px 32px rgba(0,0,0,0.5)",
           maxHeight: 220, overflowY: "auto",
           animation: "fadeIn 0.15s ease",
@@ -1268,7 +1338,7 @@ const SearchableDropdown = ({ value, onChange, options, placeholder = "Search…
                   padding: "9px 14px", cursor: "pointer", fontSize: 13,
                   background: opt.value === value ? "rgba(59,130,246,0.1)" : "transparent",
                   color: opt.value === value ? "#3B82F6" : "#CBD5E1",
-                  borderBottom: "1px solid #1E2330",
+                  borderBottom: "1px solid #26334F",
                   transition: "background 0.1s",
                 }}
                 onMouseEnter={e => { if (opt.value !== value) e.currentTarget.style.background = "rgba(255,255,255,0.04)"; }}
@@ -2179,7 +2249,7 @@ const Sales = () => {
           const col = colorMap[s.c];
           const glow = glowMap[s.c];
           return (
-            <div key={s.l} className="card" style={{ padding: 18, borderColor: s.c === "red" && totalDueAmount > 0 ? "rgba(239,68,68,0.3)" : "#1E2330", background: s.c === "red" && totalDueAmount > 0 ? "rgba(239,68,68,0.04)" : "#111318", position: "relative", overflow: "hidden" }}>
+            <div key={s.l} className="card" style={{ padding: 18, borderColor: s.c === "red" && totalDueAmount > 0 ? "rgba(239,68,68,0.3)" : "#26334F", background: s.c === "red" && totalDueAmount > 0 ? "rgba(239,68,68,0.04)" : "#131D33", position: "relative", overflow: "hidden" }}>
               <div style={{ position: "absolute", top: -12, right: -12, width: 64, height: 64, borderRadius: "50%", background: glow, filter: "blur(8px)" }} />
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 10 }}>
                 <div style={{ fontSize: 11, color: "#64748B", fontFamily: "IBM Plex Mono", textTransform: "uppercase", letterSpacing: "0.06em" }}>{s.l}</div>
@@ -2199,11 +2269,11 @@ const Sales = () => {
       </div>
 
       {/* ── DUE OVERVIEW PANEL ── */}
-      <div className="card" style={{ marginBottom: 20, borderColor: totalDueAmount > 0 ? "rgba(239,68,68,0.25)" : "#1E2330", overflow: "hidden" }}>
+      <div className="card" style={{ marginBottom: 20, borderColor: totalDueAmount > 0 ? "rgba(239,68,68,0.25)" : "#26334F", overflow: "hidden" }}>
         {/* Panel Header */}
         <div
           onClick={() => setShowDuePanel(p => !p)}
-          style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "14px 20px", cursor: "pointer", background: totalDueAmount > 0 ? "rgba(239,68,68,0.04)" : "transparent", borderBottom: showDuePanel ? "1px solid #1E2330" : "none", transition: "background 0.2s" }}
+          style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "14px 20px", cursor: "pointer", background: totalDueAmount > 0 ? "rgba(239,68,68,0.04)" : "transparent", borderBottom: showDuePanel ? "1px solid #26334F" : "none", transition: "background 0.2s" }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <div style={{ width: 32, height: 32, borderRadius: 10, background: "rgba(239,68,68,0.12)", border: "1px solid rgba(239,68,68,0.2)", display: "flex", alignItems: "center", justifyContent: "center", color: "#EF4444" }}>
@@ -2265,7 +2335,7 @@ const Sales = () => {
                     { label: "Total Due Amount", value: `${curr}${totalDueAmount.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`, unit: "outstanding", color: "#EF4444", glow: "rgba(239,68,68,0.1)", icon: "💰", isAmount: true },
                     { label: "Customers with Due", value: customerDueList.length, unit: "customers", color: "#F59E0B", glow: "rgba(245,158,11,0.1)", icon: "👥" },
                   ].map(card => (
-                    <div key={card.label} style={{ background: "#0D0F14", border: `1px solid ${card.color}25`, borderRadius: 12, padding: "16px 18px", position: "relative", overflow: "hidden" }}>
+                    <div key={card.label} style={{ background: "#0E1629", border: `1px solid ${card.color}25`, borderRadius: 12, padding: "16px 18px", position: "relative", overflow: "hidden" }}>
                       <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: `linear-gradient(90deg, ${card.color}, transparent)`, borderRadius: "12px 12px 0 0" }} />
                       <div style={{ fontSize: 11, color: "#64748B", fontFamily: "IBM Plex Mono", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: 8 }}>{card.label}</div>
                       <div style={{ fontSize: card.isAmount ? 18 : 28, fontWeight: 800, color: card.color, fontFamily: "IBM Plex Mono", lineHeight: 1.1 }}>{card.value}</div>
@@ -2275,8 +2345,8 @@ const Sales = () => {
                 </div>
 
                 {/* Customer Due Table */}
-                <div style={{ background: "#0D0F14", border: "1px solid #1E2330", borderRadius: 12, overflow: "hidden" }}>
-                  <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "12px 16px", borderBottom: "1px solid #1E2330" }}>
+                <div style={{ background: "#0E1629", border: "1px solid #26334F", borderRadius: 12, overflow: "hidden" }}>
+                  <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "12px 16px", borderBottom: "1px solid #26334F" }}>
                     <div style={{ fontSize: 12, fontWeight: 600, color: "#94A3B8", textTransform: "uppercase", letterSpacing: "0.06em", fontFamily: "IBM Plex Mono" }}>
                       Customer-wise Due Breakdown
                     </div>
@@ -2284,7 +2354,7 @@ const Sales = () => {
                       {[["amount", "By Amount"], ["invoices", "By Invoices"], ["name", "By Name"]].map(([key, label]) => (
                         <button key={key} onClick={() => setDueSort(key)} style={{
                           padding: "4px 10px", borderRadius: 6, border: "none", cursor: "pointer", fontSize: 11, fontFamily: "IBM Plex Mono",
-                          background: dueSort === key ? "#EF4444" : "#161A22",
+                          background: dueSort === key ? "#EF4444" : "#1A2640",
                           color: dueSort === key ? "white" : "#64748B",
                           transition: "all 0.15s",
                         }}>{label}</button>
@@ -2300,9 +2370,9 @@ const Sales = () => {
                         const pct = Math.min(100, (cust.dueAmount / maxDue) * 100);
                         const urgencyColor = pct > 70 ? "#EF4444" : pct > 35 ? "#F59E0B" : "#3B82F6";
                         return (
-                          <div key={cust.id} style={{ padding: "14px 16px", borderBottom: idx < customerDueList.length - 1 ? "1px solid #111318" : "none", display: "flex", alignItems: "center", gap: 14 }}>
+                          <div key={cust.id} style={{ padding: "14px 16px", borderBottom: idx < customerDueList.length - 1 ? "1px solid #131D33" : "none", display: "flex", alignItems: "center", gap: 14 }}>
                             {/* Rank */}
-                            <div style={{ width: 22, height: 22, borderRadius: 6, background: idx === 0 ? "rgba(239,68,68,0.15)" : idx === 1 ? "rgba(245,158,11,0.1)" : "#161A22", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 700, color: idx === 0 ? "#EF4444" : idx === 1 ? "#F59E0B" : "#64748B", fontFamily: "IBM Plex Mono", flexShrink: 0 }}>
+                            <div style={{ width: 22, height: 22, borderRadius: 6, background: idx === 0 ? "rgba(239,68,68,0.15)" : idx === 1 ? "rgba(245,158,11,0.1)" : "#1A2640", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 700, color: idx === 0 ? "#EF4444" : idx === 1 ? "#F59E0B" : "#64748B", fontFamily: "IBM Plex Mono", flexShrink: 0 }}>
                               {idx + 1}
                             </div>
                             {/* Avatar */}
@@ -2326,13 +2396,13 @@ const Sales = () => {
                                 </div>
                               </div>
                               {/* Progress bar */}
-                              <div style={{ height: 5, background: "#1E2330", borderRadius: 3, overflow: "hidden" }}>
+                              <div style={{ height: 5, background: "#26334F", borderRadius: 3, overflow: "hidden" }}>
                                 <div style={{ width: `${pct}%`, height: "100%", borderRadius: 3, background: `linear-gradient(90deg, ${urgencyColor}, ${urgencyColor}99)`, transition: "width 0.6s cubic-bezier(0.34,1.56,0.64,1)" }} />
                               </div>
                               {/* Invoice pills (max 4) */}
                               <div style={{ display: "flex", gap: 4, marginTop: 6, flexWrap: "wrap" }}>
                                 {cust.invoices.slice(0, 4).map(inv => (
-                                  <span key={inv} style={{ fontSize: 9, fontFamily: "IBM Plex Mono", background: "#161A22", color: "#64748B", padding: "2px 6px", borderRadius: 4, border: "1px solid #1E2330" }}>{inv}</span>
+                                  <span key={inv} style={{ fontSize: 9, fontFamily: "IBM Plex Mono", background: "#1A2640", color: "#64748B", padding: "2px 6px", borderRadius: 4, border: "1px solid #26334F" }}>{inv}</span>
                                 ))}
                                 {cust.invoices.length > 4 && <span style={{ fontSize: 9, fontFamily: "IBM Plex Mono", color: "#64748B" }}>+{cust.invoices.length - 4} more</span>}
                               </div>
@@ -2355,7 +2425,7 @@ const Sales = () => {
         <div style={{ display: "flex", gap: 6 }}>
           {["all", "paid", "due", "partial", "advance", "return", "deducted", "aidtds"].map(f => (
             <button key={f} onClick={() => { setFilter(f); setPage(1); }} className="btn btn-secondary btn-sm"
-              style={{ background: filter === f ? "#3B82F6" : "#161A22", color: filter === f ? "white" : "#94A3B8", border: `1px solid ${filter === f ? "#3B82F6" : "#1E2330"}` }}>
+              style={{ background: filter === f ? "#3B82F6" : "#1A2640", color: filter === f ? "white" : "#94A3B8", border: `1px solid ${filter === f ? "#3B82F6" : "#26334F"}` }}>
               {f === "aidtds" ? "AIT-TDS" : f.charAt(0).toUpperCase() + f.slice(1)}
             </button>
           ))}
@@ -2414,7 +2484,7 @@ const Sales = () => {
             <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
 
               {/* ── SALE TYPE TOGGLE ── */}
-              <div style={{ display: "flex", gap: 6, marginBottom: 20, padding: 4, background: "#0A0C10", borderRadius: 12, border: "1px solid #1E2330" }}>
+              <div style={{ display: "flex", gap: 6, marginBottom: 20, padding: 4, background: "#0B1120", borderRadius: 12, border: "1px solid #26334F" }}>
                 {[
                   { id: "regular", label: "Regular Sale", icon: "sales", desc: "Sell products to customer", color: "#3B82F6" },
                   { id: "advance", label: "Payment", icon: "wallet", desc: "Apply payment to a due invoice", color: "#10B981" },
@@ -2454,7 +2524,7 @@ const Sales = () => {
               </div>
 
               {/* ── SECTION 1: CUSTOMER & DATE ── */}
-              <div style={{ background: "#0D0F14", border: "1px solid #1E2330", borderRadius: 12, padding: "16px 18px", marginBottom: 12 }}>
+              <div style={{ background: "#0E1629", border: "1px solid #26334F", borderRadius: 12, padding: "16px 18px", marginBottom: 12 }}>
                 <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 14 }}>
                   <div style={{ width: 20, height: 20, borderRadius: 6, background: "rgba(59,130,246,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                     <Icon name="customers" size={11} color="#3B82F6" />
@@ -2564,7 +2634,7 @@ const Sales = () => {
                           <button key={method} onClick={() => setForm(f => ({ ...f, paymentMethod: method }))}
                             style={{
                               padding: "7px 6px", borderRadius: 7,
-                              border: `1px solid ${active ? "rgba(16,185,129,0.5)" : "#1E2330"}`,
+                              border: `1px solid ${active ? "rgba(16,185,129,0.5)" : "#26334F"}`,
                               background: active ? "rgba(16,185,129,0.12)" : "transparent",
                               color: active ? "#10B981" : "#475569",
                               fontSize: 11, fontWeight: 700, fontFamily: "IBM Plex Mono",
@@ -2688,8 +2758,8 @@ const Sales = () => {
                           {/* Unit */}
                           <div style={{
                             padding: "6px 4px", borderRadius: 7, textAlign: "center",
-                            background: item.unit ? "rgba(239,68,68,0.08)" : "#111318",
-                            border: `1px solid ${item.unit ? "rgba(239,68,68,0.2)" : "#1E2330"}`,
+                            background: item.unit ? "rgba(239,68,68,0.08)" : "#131D33",
+                            border: `1px solid ${item.unit ? "rgba(239,68,68,0.2)" : "#26334F"}`,
                             fontSize: 11, fontWeight: 700, color: item.unit ? "#EF4444" : "#374151",
                             fontFamily: "IBM Plex Mono", minHeight: 34, display: "flex", alignItems: "center", justifyContent: "center",
                             marginTop: 1,
@@ -2721,7 +2791,7 @@ const Sales = () => {
 
                 {/* Return Total Summary */}
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 12 }}>
-                  <div style={{ background: "#0D0F14", border: "1px solid rgba(239,68,68,0.2)", borderRadius: 12, padding: "16px 18px" }}>
+                  <div style={{ background: "#0E1629", border: "1px solid rgba(239,68,68,0.2)", borderRadius: 12, padding: "16px 18px" }}>
                     <div style={{ fontSize: 10, color: "#EF4444", fontFamily: "IBM Plex Mono", marginBottom: 10, textTransform: "uppercase", letterSpacing: "0.08em", opacity: 0.8 }}>Return Summary</div>
                     {(form.returnItems || []).filter(it => it.productId).map((it, i) => {
                       const prod = data.products.find(p => p.id === it.productId);
@@ -2738,7 +2808,7 @@ const Sales = () => {
                       <span style={{ fontFamily: "IBM Plex Mono", fontSize: 20, fontWeight: 800, color: "#EF4444" }}>{curr2}{returnTotal.toFixed(2)}</span>
                     </div>
                   </div>
-                  <div style={{ background: "#0D0F14", border: "1px solid rgba(239,68,68,0.15)", borderRadius: 12, padding: "16px 18px", display: "flex", flexDirection: "column", justifyContent: "center", gap: 8 }}>
+                  <div style={{ background: "#0E1629", border: "1px solid rgba(239,68,68,0.15)", borderRadius: 12, padding: "16px 18px", display: "flex", flexDirection: "column", justifyContent: "center", gap: 8 }}>
                     <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                       <div style={{ width: 28, height: 28, borderRadius: 8, background: "rgba(239,68,68,0.12)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                         <Icon name="refresh" size={13} color="#EF4444" />
@@ -2758,7 +2828,7 @@ const Sales = () => {
 
               {/* ── REGULAR SALE: PRODUCTS ── */}
               {form.saleType === "regular" && (<>
-                <div style={{ background: "#0D0F14", border: "1px solid #1E2330", borderRadius: 12, padding: "16px 18px", marginBottom: 12 }}>
+                <div style={{ background: "#0E1629", border: "1px solid #26334F", borderRadius: 12, padding: "16px 18px", marginBottom: 12 }}>
                   {/* Section header */}
                   <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 14 }}>
                     <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
@@ -2774,7 +2844,7 @@ const Sales = () => {
                         <input type="number" value={form.vatRate} onChange={e => setForm(f => ({ ...f, vatRate: +e.target.value }))} min={0} max={100}
                           style={{ width: 64, padding: "5px 8px", textAlign: "center", fontSize: 12 }} />
                       </div>
-                      <button className="btn btn-secondary btn-sm" onClick={addItem} style={{ gap: 5, border: "1px dashed #252B3B" }}>
+                      <button className="btn btn-secondary btn-sm" onClick={addItem} style={{ gap: 5, border: "1px dashed #34446A" }}>
                         <Icon name="plus" size={12} /> Add Row
                       </button>
                     </div>
@@ -2783,7 +2853,7 @@ const Sales = () => {
                   {/* Column headers */}
                   <div style={{
                     display: "grid", gridTemplateColumns: "2fr 60px 88px 100px 72px 80px 32px",
-                    gap: 8, paddingBottom: 8, marginBottom: 6, borderBottom: "1px solid #1E2330",
+                    gap: 8, paddingBottom: 8, marginBottom: 6, borderBottom: "1px solid #26334F",
                   }}>
                     {["Product", "Unit", "Qty", "Unit Price", "Disc %", "Line Total", ""].map((h, idx) => (
                       <div key={idx} style={{ fontSize: 10, fontWeight: 700, color: "#475569", textTransform: "uppercase", letterSpacing: "0.06em", fontFamily: "IBM Plex Mono", textAlign: idx >= 4 ? "center" : "left" }}>{h}</div>
@@ -2801,7 +2871,7 @@ const Sales = () => {
                           display: "grid", gridTemplateColumns: "2fr 60px 88px 100px 72px 80px 32px",
                           gap: 8, alignItems: "start", padding: "8px 10px", borderRadius: 9,
                           background: overStock ? "rgba(239,68,68,0.04)" : "rgba(255,255,255,0.015)",
-                          border: `1px solid ${overStock ? "rgba(239,68,68,0.2)" : "#1E2330"}`,
+                          border: `1px solid ${overStock ? "rgba(239,68,68,0.2)" : "#26334F"}`,
                           transition: "border-color 0.15s",
                         }}>
                           <SearchableDropdown
@@ -2817,8 +2887,8 @@ const Sales = () => {
                           {/* Unit */}
                           <div style={{
                             padding: "6px 4px", borderRadius: 7, textAlign: "center",
-                            background: item.unit ? "rgba(16,185,129,0.08)" : "#111318",
-                            border: `1px solid ${item.unit ? "rgba(16,185,129,0.2)" : "#1E2330"}`,
+                            background: item.unit ? "rgba(16,185,129,0.08)" : "#131D33",
+                            border: `1px solid ${item.unit ? "rgba(16,185,129,0.2)" : "#26334F"}`,
                             fontSize: 11, fontWeight: 700, color: item.unit ? "#10B981" : "#374151",
                             fontFamily: "IBM Plex Mono", minHeight: 34, display: "flex", alignItems: "center", justifyContent: "center",
                             marginTop: 1,
@@ -2826,7 +2896,7 @@ const Sales = () => {
                           {/* Qty */}
                           <div style={{ position: "relative" }}>
                             <input type="number" value={item.qty} onChange={e => updateItem(i, "qty", +e.target.value)} min={1}
-                              style={{ textAlign: "center", borderColor: overStock ? "rgba(239,68,68,0.4)" : "#1E2330" }} />
+                              style={{ textAlign: "center", borderColor: overStock ? "rgba(239,68,68,0.4)" : "#26334F" }} />
                             {overStock && (
                               <div style={{ position: "absolute", top: "calc(100% + 2px)", left: 0, right: 0, fontSize: 9, color: "#EF4444", fontFamily: "IBM Plex Mono", textAlign: "center" }}>
                                 Max: {prod.stock}
@@ -2866,7 +2936,7 @@ const Sales = () => {
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 12 }}>
 
                   {/* Order Summary */}
-                  <div style={{ background: "#0D0F14", border: "1px solid #1E2330", borderRadius: 12, padding: "16px 18px", display: "flex", flexDirection: "column", gap: 0 }}>
+                  <div style={{ background: "#0E1629", border: "1px solid #26334F", borderRadius: 12, padding: "16px 18px", display: "flex", flexDirection: "column", gap: 0 }}>
                     <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 14 }}>
                       <div style={{ width: 20, height: 20, borderRadius: 6, background: "rgba(59,130,246,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                         <Icon name="reports" size={11} color="#3B82F6" />
@@ -2881,7 +2951,7 @@ const Sales = () => {
                       <span style={{ fontSize: 12, color: "#64748B" }}>{taxName2} ({form.vatRate}%)</span>
                       <span style={{ fontFamily: "IBM Plex Mono", fontSize: 12, color: "#F59E0B" }}>{curr2}{vat.toFixed(2)}</span>
                     </div>
-                    <div style={{ height: 1, background: "#1E2330", margin: "8px 0 12px" }} />
+                    <div style={{ height: 1, background: "#26334F", margin: "8px 0 12px" }} />
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                       <span style={{ fontSize: 13, fontWeight: 700, color: "#94A3B8" }}>Grand Total</span>
                       <span style={{ fontFamily: "IBM Plex Mono", fontSize: 20, fontWeight: 800, color: "#3B82F6" }}>{curr2}{total.toFixed(2)}</span>
@@ -2889,7 +2959,7 @@ const Sales = () => {
                   </div>
 
                   {/* Payment Details */}
-                  <div style={{ background: "#0D0F14", border: "1px solid #1E2330", borderRadius: 12, padding: "16px 18px" }}>
+                  <div style={{ background: "#0E1629", border: "1px solid #26334F", borderRadius: 12, padding: "16px 18px" }}>
                     <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 14 }}>
                       <div style={{ width: 20, height: 20, borderRadius: 6, background: "rgba(16,185,129,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                         <Icon name="finance" size={11} color="#10B981" />
@@ -2917,7 +2987,7 @@ const Sales = () => {
                             <button key={method} onClick={() => setForm(f => ({ ...f, paymentMethod: method }))}
                               style={{
                                 padding: "7px 6px", borderRadius: 7,
-                                border: `1px solid ${active ? "rgba(16,185,129,0.5)" : "#1E2330"}`,
+                                border: `1px solid ${active ? "rgba(16,185,129,0.5)" : "#26334F"}`,
                                 background: active ? "rgba(16,185,129,0.12)" : "transparent",
                                 color: active ? "#10B981" : "#475569",
                                 fontSize: 11, fontWeight: 700, fontFamily: "IBM Plex Mono",
@@ -2948,7 +3018,7 @@ const Sales = () => {
                             return (
                               <button key={s} onClick={() => setForm(f => ({ ...f, status: s }))}
                                 style={{
-                                  padding: "4px 8px", borderRadius: 6, border: `1px solid ${isActive ? col : "#1E2330"}`,
+                                  padding: "4px 8px", borderRadius: 6, border: `1px solid ${isActive ? col : "#26334F"}`,
                                   background: isActive ? `${col}20` : "transparent",
                                   color: isActive ? col : "#475569",
                                   fontSize: 10, fontWeight: 700, fontFamily: "IBM Plex Mono", cursor: "pointer",
@@ -2966,7 +3036,7 @@ const Sales = () => {
               </>)}
 
               {/* ── NOTES ── */}
-              <div style={{ background: "#0D0F14", border: "1px solid #1E2330", borderRadius: 12, padding: "14px 18px", marginBottom: 16 }}>
+              <div style={{ background: "#0E1629", border: "1px solid #26334F", borderRadius: 12, padding: "14px 18px", marginBottom: 16 }}>
                 <label style={{ fontSize: 11, fontWeight: 700, color: "#475569", textTransform: "uppercase", letterSpacing: "0.06em", fontFamily: "IBM Plex Mono", display: "block", marginBottom: 8 }}>Notes (optional)</label>
                 <textarea value={form.notes} onChange={e => setForm(f => ({ ...f, notes: e.target.value }))} rows={2}
                   placeholder="Add any extra information or instructions…"
@@ -2977,8 +3047,8 @@ const Sales = () => {
               {/* ── FOOTER ACTIONS ── */}
               <div style={{
                 display: "flex", alignItems: "center", justifyContent: "space-between",
-                padding: "14px 18px", background: "#0A0C10", borderRadius: 12,
-                border: "1px solid #1E2330",
+                padding: "14px 18px", background: "#0B1120", borderRadius: 12,
+                border: "1px solid #26334F",
               }}>
                 <div style={{ fontSize: 12, color: "#475569" }}>
                   {form.saleType === "regular" && total > 0 && (
@@ -3044,9 +3114,9 @@ const Sales = () => {
                 onClick={() => { setReportFrom(p.from); setReportTo(p.to); }}
                 style={{
                   fontSize: 11, padding: "6px 10px",
-                  background: reportFrom === p.from && reportTo === p.to ? "#3B82F6" : "#161A22",
+                  background: reportFrom === p.from && reportTo === p.to ? "#3B82F6" : "#1A2640",
                   color: reportFrom === p.from && reportTo === p.to ? "white" : "#94A3B8",
-                  border: `1px solid ${reportFrom === p.from && reportTo === p.to ? "#3B82F6" : "#1E2330"}`,
+                  border: `1px solid ${reportFrom === p.from && reportTo === p.to ? "#3B82F6" : "#26334F"}`,
                 }}>
                 {p.l}
               </button>
@@ -3085,8 +3155,8 @@ const Sales = () => {
                 return (
                   <div key={t.key} style={{
                     display: "flex", alignItems: "center", borderRadius: 8,
-                    border: `1px solid ${active ? t.c : "#1E2330"}`,
-                    background: active ? `${t.c}1F` : "#161A22",
+                    border: `1px solid ${active ? t.c : "#26334F"}`,
+                    background: active ? `${t.c}1F` : "#1A2640",
                     overflow: "hidden",
                   }}>
                     <button onClick={() => toggleReportType(t.key)} title="Toggle include/exclude"
@@ -3101,7 +3171,7 @@ const Sales = () => {
                     </button>
                     <button onClick={() => selectOnlyType(t.key)} title={`Only ${t.l}`}
                       style={{
-                        padding: "7px 10px", border: "none", borderLeft: `1px solid ${active ? t.c + "44" : "#1E2330"}`,
+                        padding: "7px 10px", border: "none", borderLeft: `1px solid ${active ? t.c + "44" : "#26334F"}`,
                         background: onlyThisSelected ? t.c : "transparent",
                         color: onlyThisSelected ? "#fff" : "#475569",
                         fontSize: 10, fontWeight: 700, cursor: "pointer", letterSpacing: "0.02em",
@@ -3115,7 +3185,7 @@ const Sales = () => {
           </div>
 
           {/* Live preview */}
-          <div style={{ background: "#0D0F14", border: "1px solid #1E2330", borderRadius: 12, padding: 16 }}>
+          <div style={{ background: "#0E1629", border: "1px solid #26334F", borderRadius: 12, padding: 16 }}>
             <div style={{ fontSize: 11, color: "#64748B", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: 12, fontFamily: "IBM Plex Mono" }}>
               Report Preview — {reportRows.length} transaction{reportRows.length !== 1 ? "s" : ""}
             </div>
@@ -3275,7 +3345,7 @@ const InvoicePreview = ({ sale }) => {
   const handlePrint = handleDownload;
 
   return (
-    <div style={{ background: "#0A0C10", borderRadius: 12, padding: 28, fontFamily: "Sora, sans-serif" }}>
+    <div style={{ background: "#0B1120", borderRadius: 12, padding: 28, fontFamily: "Sora, sans-serif" }}>
       {/* Invoice Header */}
       <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 24, paddingBottom: 20, borderBottom: "2px solid #3B82F6" }}>
         <div>
@@ -3291,13 +3361,13 @@ const InvoicePreview = ({ sale }) => {
 
       {/* Bill To / Details */}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 24 }}>
-        <div style={{ background: "#111318", padding: "14px 16px", borderRadius: 8 }}>
+        <div style={{ background: "#131D33", padding: "14px 16px", borderRadius: 8 }}>
           <div style={{ fontSize: 10, color: "#64748B", fontFamily: "IBM Plex Mono", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.08em" }}>Bill To</div>
           <div style={{ fontSize: 14, fontWeight: 600, color: "#E2E8F0" }}>{cust?.name || "—"}</div>
           <div style={{ fontSize: 12, color: "#94A3B8", marginTop: 2 }}>{cust?.email}</div>
           <div style={{ fontSize: 12, color: "#94A3B8" }}>{cust?.address}</div>
         </div>
-        <div style={{ background: "#111318", padding: "14px 16px", borderRadius: 8, textAlign: "right" }}>
+        <div style={{ background: "#131D33", padding: "14px 16px", borderRadius: 8, textAlign: "right" }}>
           <div style={{ fontSize: 10, color: "#64748B", fontFamily: "IBM Plex Mono", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.08em" }}>Details</div>
           <div style={{ fontSize: 12, color: "#94A3B8" }}>Date: <span style={{ fontFamily: "IBM Plex Mono", color: "#CBD5E1" }}>{sale.date}</span></div>
           <div style={{ fontSize: 12, color: "#94A3B8", marginTop: 4 }}>Status: <StatusBadge status={sale.status} /></div>
@@ -3431,7 +3501,7 @@ const InvoicePreview = ({ sale }) => {
           </table>
 
           {/* Totals */}
-          <div style={{ marginLeft: "auto", maxWidth: 280, borderTop: "1px solid #1E2330", paddingTop: 14 }}>
+          <div style={{ marginLeft: "auto", maxWidth: 280, borderTop: "1px solid #26334F", paddingTop: 14 }}>
             {[
               ["Subtotal", sale.subtotal, "#94A3B8"],
               [`${taxName} (${vatPct}%)`, sale.vat, "#94A3B8"],
@@ -3439,7 +3509,7 @@ const InvoicePreview = ({ sale }) => {
               ["Paid", sale.paid, "#10B981"],
               ...(sale.due > 0 ? [["Due", sale.due, "#EF4444"]] : []),
             ].map(([l, v, c]) => (
-              <div key={l} style={{ display: "flex", justifyContent: "space-between", marginBottom: l === "Total" ? 0 : 8, paddingTop: l === "Total" ? 10 : 0, borderTop: l === "Total" ? "1px solid #1E2330" : "none", fontSize: l === "Total" ? 16 : 13, fontWeight: l === "Total" ? 700 : 400 }}>
+              <div key={l} style={{ display: "flex", justifyContent: "space-between", marginBottom: l === "Total" ? 0 : 8, paddingTop: l === "Total" ? 10 : 0, borderTop: l === "Total" ? "1px solid #26334F" : "none", fontSize: l === "Total" ? 16 : 13, fontWeight: l === "Total" ? 700 : 400 }}>
                 <span style={{ color: c }}>{l}</span>
                 <span style={{ fontFamily: "IBM Plex Mono", color: l === "Total" ? "#3B82F6" : c }}>{curr}{Number(v).toFixed(2)}</span>
               </div>
@@ -3449,7 +3519,7 @@ const InvoicePreview = ({ sale }) => {
       )}
 
       {/* Action Buttons */}
-      <div style={{ display: "flex", gap: 10, marginTop: 24, paddingTop: 20, borderTop: "1px solid #1E2330" }}>
+      <div style={{ display: "flex", gap: 10, marginTop: 24, paddingTop: 20, borderTop: "1px solid #26334F" }}>
         <button className="btn btn-primary" onClick={handleDownload}>
           <Icon name="download" size={14} /> Download PDF
         </button>
@@ -3932,11 +4002,11 @@ const Purchases = () => {
       </div>
 
       {/* ── DUE OVERVIEW PANEL ── */}
-      <div className="card" style={{ marginBottom: 20, borderColor: totalDueAmount > 0 ? "rgba(239,68,68,0.25)" : "#1E2330", overflow: "hidden" }}>
+      <div className="card" style={{ marginBottom: 20, borderColor: totalDueAmount > 0 ? "rgba(239,68,68,0.25)" : "#26334F", overflow: "hidden" }}>
         {/* Panel Header */}
         <div
           onClick={() => setShowDuePanel(p => !p)}
-          style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "14px 20px", cursor: "pointer", background: totalDueAmount > 0 ? "rgba(239,68,68,0.04)" : "transparent", borderBottom: showDuePanel ? "1px solid #1E2330" : "none", transition: "background 0.2s" }}
+          style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "14px 20px", cursor: "pointer", background: totalDueAmount > 0 ? "rgba(239,68,68,0.04)" : "transparent", borderBottom: showDuePanel ? "1px solid #26334F" : "none", transition: "background 0.2s" }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <div style={{ width: 32, height: 32, borderRadius: 10, background: "rgba(239,68,68,0.12)", border: "1px solid rgba(239,68,68,0.2)", display: "flex", alignItems: "center", justifyContent: "center", color: "#EF4444" }}>
@@ -3998,7 +4068,7 @@ const Purchases = () => {
                     { label: "Total Due Amount", value: `${curr}${totalDueAmount.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`, unit: "outstanding", color: "#EF4444", glow: "rgba(239,68,68,0.1)", icon: "💰", isAmount: true },
                     { label: "Suppliers with Due", value: supplierDueList.length, unit: "suppliers", color: "#F59E0B", glow: "rgba(245,158,11,0.1)", icon: "👥" },
                   ].map(card => (
-                    <div key={card.label} style={{ background: "#0D0F14", border: `1px solid ${card.color}25`, borderRadius: 12, padding: "16px 18px", position: "relative", overflow: "hidden" }}>
+                    <div key={card.label} style={{ background: "#0E1629", border: `1px solid ${card.color}25`, borderRadius: 12, padding: "16px 18px", position: "relative", overflow: "hidden" }}>
                       <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: `linear-gradient(90deg, ${card.color}, transparent)`, borderRadius: "12px 12px 0 0" }} />
                       <div style={{ fontSize: 11, color: "#64748B", fontFamily: "IBM Plex Mono", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: 8 }}>{card.label}</div>
                       <div style={{ fontSize: card.isAmount ? 18 : 28, fontWeight: 800, color: card.color, fontFamily: "IBM Plex Mono", lineHeight: 1.1 }}>{card.value}</div>
@@ -4008,8 +4078,8 @@ const Purchases = () => {
                 </div>
 
                 {/* Supplier Due Table */}
-                <div style={{ background: "#0D0F14", border: "1px solid #1E2330", borderRadius: 12, overflow: "hidden" }}>
-                  <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "12px 16px", borderBottom: "1px solid #1E2330" }}>
+                <div style={{ background: "#0E1629", border: "1px solid #26334F", borderRadius: 12, overflow: "hidden" }}>
+                  <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "12px 16px", borderBottom: "1px solid #26334F" }}>
                     <div style={{ fontSize: 12, fontWeight: 600, color: "#94A3B8", textTransform: "uppercase", letterSpacing: "0.06em", fontFamily: "IBM Plex Mono" }}>
                       Supplier-wise Due Breakdown
                     </div>
@@ -4017,7 +4087,7 @@ const Purchases = () => {
                       {[["amount", "By Amount"], ["invoices", "By Orders"], ["name", "By Name"]].map(([key, label]) => (
                         <button key={key} onClick={() => setDueSort(key)} style={{
                           padding: "4px 10px", borderRadius: 6, border: "none", cursor: "pointer", fontSize: 11, fontFamily: "IBM Plex Mono",
-                          background: dueSort === key ? "#EF4444" : "#161A22",
+                          background: dueSort === key ? "#EF4444" : "#1A2640",
                           color: dueSort === key ? "white" : "#64748B",
                           transition: "all 0.15s",
                         }}>{label}</button>
@@ -4033,9 +4103,9 @@ const Purchases = () => {
                         const pct = Math.min(100, (sup.dueAmount / maxDue) * 100);
                         const urgencyColor = pct > 70 ? "#EF4444" : pct > 35 ? "#F59E0B" : "#3B82F6";
                         return (
-                          <div key={sup.id} style={{ padding: "14px 16px", borderBottom: idx < supplierDueList.length - 1 ? "1px solid #111318" : "none", display: "flex", alignItems: "center", gap: 14 }}>
+                          <div key={sup.id} style={{ padding: "14px 16px", borderBottom: idx < supplierDueList.length - 1 ? "1px solid #131D33" : "none", display: "flex", alignItems: "center", gap: 14 }}>
                             {/* Rank */}
-                            <div style={{ width: 22, height: 22, borderRadius: 6, background: idx === 0 ? "rgba(239,68,68,0.15)" : idx === 1 ? "rgba(245,158,11,0.1)" : "#161A22", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 700, color: idx === 0 ? "#EF4444" : idx === 1 ? "#F59E0B" : "#64748B", fontFamily: "IBM Plex Mono", flexShrink: 0 }}>
+                            <div style={{ width: 22, height: 22, borderRadius: 6, background: idx === 0 ? "rgba(239,68,68,0.15)" : idx === 1 ? "rgba(245,158,11,0.1)" : "#1A2640", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 700, color: idx === 0 ? "#EF4444" : idx === 1 ? "#F59E0B" : "#64748B", fontFamily: "IBM Plex Mono", flexShrink: 0 }}>
                               {idx + 1}
                             </div>
                             {/* Avatar */}
@@ -4059,13 +4129,13 @@ const Purchases = () => {
                                 </div>
                               </div>
                               {/* Progress bar */}
-                              <div style={{ height: 5, background: "#1E2330", borderRadius: 3, overflow: "hidden" }}>
+                              <div style={{ height: 5, background: "#26334F", borderRadius: 3, overflow: "hidden" }}>
                                 <div style={{ width: `${pct}%`, height: "100%", borderRadius: 3, background: `linear-gradient(90deg, ${urgencyColor}, ${urgencyColor}99)`, transition: "width 0.6s cubic-bezier(0.34,1.56,0.64,1)" }} />
                               </div>
                               {/* PO pills (max 4) */}
                               <div style={{ display: "flex", gap: 4, marginTop: 6, flexWrap: "wrap" }}>
                                 {sup.invoices.slice(0, 4).map(inv => (
-                                  <span key={inv} style={{ fontSize: 9, fontFamily: "IBM Plex Mono", background: "#161A22", color: "#64748B", padding: "2px 6px", borderRadius: 4, border: "1px solid #1E2330" }}>{inv}</span>
+                                  <span key={inv} style={{ fontSize: 9, fontFamily: "IBM Plex Mono", background: "#1A2640", color: "#64748B", padding: "2px 6px", borderRadius: 4, border: "1px solid #26334F" }}>{inv}</span>
                                 ))}
                                 {sup.invoices.length > 4 && <span style={{ fontSize: 9, fontFamily: "IBM Plex Mono", color: "#64748B" }}>+{sup.invoices.length - 4} more</span>}
                               </div>
@@ -4095,7 +4165,7 @@ const Purchases = () => {
         <div style={{ display: "flex", gap: 6 }}>
           {["all", "paid", "due", "partial", "advance", "return", "deducted", "aidtds"].map(f => (
             <button key={f} onClick={() => { setFilter(f); setPage(1); }} className="btn btn-secondary btn-sm"
-              style={{ background: filter === f ? "#3B82F6" : "#161A22", color: filter === f ? "white" : "#94A3B8", border: `1px solid ${filter === f ? "#3B82F6" : "#1E2330"}` }}>
+              style={{ background: filter === f ? "#3B82F6" : "#1A2640", color: filter === f ? "white" : "#94A3B8", border: `1px solid ${filter === f ? "#3B82F6" : "#26334F"}` }}>
               {f === "aidtds" ? "AIT-TDS" : f.charAt(0).toUpperCase() + f.slice(1)}
             </button>
           ))}
@@ -4145,7 +4215,7 @@ const Purchases = () => {
             <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
 
               {/* ── PURCHASE TYPE TOGGLE ── */}
-              <div style={{ display: "flex", gap: 6, marginBottom: 20, padding: 4, background: "#0A0C10", borderRadius: 12, border: "1px solid #1E2330" }}>
+              <div style={{ display: "flex", gap: 6, marginBottom: 20, padding: 4, background: "#0B1120", borderRadius: 12, border: "1px solid #26334F" }}>
                 {[
                   { id: "regular", label: "Regular Purchase", icon: "purchase", desc: "Buy products from supplier", color: "#3B82F6" },
                   { id: "advance", label: "Payment", icon: "wallet", desc: "Apply payment to a due purchase", color: "#10B981" },
@@ -4185,7 +4255,7 @@ const Purchases = () => {
               </div>
 
               {/* ── SECTION 1: SUPPLIER & DATE ── */}
-              <div style={{ background: "#0D0F14", border: "1px solid #1E2330", borderRadius: 12, padding: "16px 18px", marginBottom: 12 }}>
+              <div style={{ background: "#0E1629", border: "1px solid #26334F", borderRadius: 12, padding: "16px 18px", marginBottom: 12 }}>
                 <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 14 }}>
                   <div style={{ width: 20, height: 20, borderRadius: 6, background: "rgba(59,130,246,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                     <Icon name="suppliers" size={11} color="#3B82F6" />
@@ -4273,7 +4343,7 @@ const Purchases = () => {
                           <button key={method} onClick={() => setForm(f => ({ ...f, paymentMethod: method }))}
                             style={{
                               padding: "7px 6px", borderRadius: 7,
-                              border: `1px solid ${active ? "rgba(16,185,129,0.5)" : "#1E2330"}`,
+                              border: `1px solid ${active ? "rgba(16,185,129,0.5)" : "#26334F"}`,
                               background: active ? "rgba(16,185,129,0.12)" : "transparent",
                               color: active ? "#10B981" : "#475569",
                               fontSize: 11, fontWeight: 700, fontFamily: "IBM Plex Mono",
@@ -4396,8 +4466,8 @@ const Purchases = () => {
                           {/* Unit */}
                           <div style={{
                             padding: "6px 4px", borderRadius: 7, textAlign: "center",
-                            background: item.unit ? "rgba(239,68,68,0.08)" : "#111318",
-                            border: `1px solid ${item.unit ? "rgba(239,68,68,0.2)" : "#1E2330"}`,
+                            background: item.unit ? "rgba(239,68,68,0.08)" : "#131D33",
+                            border: `1px solid ${item.unit ? "rgba(239,68,68,0.2)" : "#26334F"}`,
                             fontSize: 11, fontWeight: 700, color: item.unit ? "#EF4444" : "#374151",
                             fontFamily: "IBM Plex Mono", minHeight: 34, display: "flex", alignItems: "center", justifyContent: "center",
                             marginTop: 1,
@@ -4429,7 +4499,7 @@ const Purchases = () => {
 
                 {/* Return Total Summary */}
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 12 }}>
-                  <div style={{ background: "#0D0F14", border: "1px solid rgba(239,68,68,0.2)", borderRadius: 12, padding: "16px 18px" }}>
+                  <div style={{ background: "#0E1629", border: "1px solid rgba(239,68,68,0.2)", borderRadius: 12, padding: "16px 18px" }}>
                     <div style={{ fontSize: 10, color: "#EF4444", fontFamily: "IBM Plex Mono", marginBottom: 10, textTransform: "uppercase", letterSpacing: "0.08em", opacity: 0.8 }}>Return Summary</div>
                     {(form.returnItems || []).filter(it => it.productId).map((it, i) => {
                       const prod = data.products.find(p => p.id === it.productId);
@@ -4446,7 +4516,7 @@ const Purchases = () => {
                       <span style={{ fontFamily: "IBM Plex Mono", fontSize: 20, fontWeight: 800, color: "#EF4444" }}>{curr2}{returnTotal.toFixed(2)}</span>
                     </div>
                   </div>
-                  <div style={{ background: "#0D0F14", border: "1px solid rgba(239,68,68,0.15)", borderRadius: 12, padding: "16px 18px", display: "flex", flexDirection: "column", justifyContent: "center", gap: 8 }}>
+                  <div style={{ background: "#0E1629", border: "1px solid rgba(239,68,68,0.15)", borderRadius: 12, padding: "16px 18px", display: "flex", flexDirection: "column", justifyContent: "center", gap: 8 }}>
                     <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                       <div style={{ width: 28, height: 28, borderRadius: 8, background: "rgba(239,68,68,0.12)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                         <Icon name="refresh" size={13} color="#EF4444" />
@@ -4466,7 +4536,7 @@ const Purchases = () => {
 
               {/* ── REGULAR PURCHASE: PRODUCTS ── */}
               {form.purchaseType === "regular" && (<>
-                <div style={{ background: "#0D0F14", border: "1px solid #1E2330", borderRadius: 12, padding: "16px 18px", marginBottom: 12 }}>
+                <div style={{ background: "#0E1629", border: "1px solid #26334F", borderRadius: 12, padding: "16px 18px", marginBottom: 12 }}>
                   {/* Section header */}
                   <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 14 }}>
                     <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
@@ -4476,7 +4546,7 @@ const Purchases = () => {
                       <span style={{ fontSize: 11, fontWeight: 700, color: "#10B981", textTransform: "uppercase", letterSpacing: "0.08em", fontFamily: "IBM Plex Mono" }}>Products</span>
                       <span style={{ fontSize: 11, color: "#374151", fontFamily: "IBM Plex Mono" }}>({form.items.length} {form.items.length === 1 ? "row" : "rows"})</span>
                     </div>
-                    <button className="btn btn-secondary btn-sm" onClick={addItem} style={{ gap: 5, border: "1px dashed #252B3B" }}>
+                    <button className="btn btn-secondary btn-sm" onClick={addItem} style={{ gap: 5, border: "1px dashed #34446A" }}>
                       <Icon name="plus" size={12} /> Add Row
                     </button>
                   </div>
@@ -4484,7 +4554,7 @@ const Purchases = () => {
                   {/* Column headers */}
                   <div style={{
                     display: "grid", gridTemplateColumns: "2fr 60px 88px 110px 90px 32px",
-                    gap: 8, paddingBottom: 8, marginBottom: 6, borderBottom: "1px solid #1E2330",
+                    gap: 8, paddingBottom: 8, marginBottom: 6, borderBottom: "1px solid #26334F",
                   }}>
                     {["Product", "Unit", "Qty", "Buy Price", "Line Total", ""].map((h, idx) => (
                       <div key={idx} style={{ fontSize: 10, fontWeight: 700, color: "#475569", textTransform: "uppercase", letterSpacing: "0.06em", fontFamily: "IBM Plex Mono", textAlign: idx >= 4 ? "center" : "left" }}>{h}</div>
@@ -4499,7 +4569,7 @@ const Purchases = () => {
                         <div key={i} style={{
                           display: "grid", gridTemplateColumns: "2fr 60px 88px 110px 90px 32px",
                           gap: 8, alignItems: "start", padding: "8px 10px", borderRadius: 9,
-                          background: "rgba(255,255,255,0.015)", border: "1px solid #1E2330",
+                          background: "rgba(255,255,255,0.015)", border: "1px solid #26334F",
                         }}>
                           <SearchableDropdown
                             value={item.productId}
@@ -4514,8 +4584,8 @@ const Purchases = () => {
                           {/* Unit */}
                           <div style={{
                             padding: "6px 4px", borderRadius: 7, textAlign: "center",
-                            background: item.unit ? "rgba(16,185,129,0.08)" : "#111318",
-                            border: `1px solid ${item.unit ? "rgba(16,185,129,0.2)" : "#1E2330"}`,
+                            background: item.unit ? "rgba(16,185,129,0.08)" : "#131D33",
+                            border: `1px solid ${item.unit ? "rgba(16,185,129,0.2)" : "#26334F"}`,
                             fontSize: 11, fontWeight: 700, color: item.unit ? "#10B981" : "#374151",
                             fontFamily: "IBM Plex Mono", minHeight: 34, display: "flex", alignItems: "center", justifyContent: "center",
                             marginTop: 1,
@@ -4551,7 +4621,7 @@ const Purchases = () => {
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 12 }}>
 
                   {/* Order Summary */}
-                  <div style={{ background: "#0D0F14", border: "1px solid #1E2330", borderRadius: 12, padding: "16px 18px", display: "flex", flexDirection: "column", gap: 0 }}>
+                  <div style={{ background: "#0E1629", border: "1px solid #26334F", borderRadius: 12, padding: "16px 18px", display: "flex", flexDirection: "column", gap: 0 }}>
                     <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 14 }}>
                       <div style={{ width: 20, height: 20, borderRadius: 6, background: "rgba(59,130,246,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                         <Icon name="reports" size={11} color="#3B82F6" />
@@ -4562,7 +4632,7 @@ const Purchases = () => {
                       <span style={{ fontSize: 12, color: "#64748B" }}>Total Items</span>
                       <span style={{ fontFamily: "IBM Plex Mono", fontSize: 12, color: "#94A3B8" }}>{totalQty.toLocaleString()}</span>
                     </div>
-                    <div style={{ height: 1, background: "#1E2330", margin: "8px 0 12px" }} />
+                    <div style={{ height: 1, background: "#26334F", margin: "8px 0 12px" }} />
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                       <span style={{ fontSize: 13, fontWeight: 700, color: "#94A3B8" }}>Grand Total</span>
                       <span style={{ fontFamily: "IBM Plex Mono", fontSize: 20, fontWeight: 800, color: "#3B82F6" }}>{curr2}{total.toFixed(2)}</span>
@@ -4570,7 +4640,7 @@ const Purchases = () => {
                   </div>
 
                   {/* Payment Details */}
-                  <div style={{ background: "#0D0F14", border: "1px solid #1E2330", borderRadius: 12, padding: "16px 18px" }}>
+                  <div style={{ background: "#0E1629", border: "1px solid #26334F", borderRadius: 12, padding: "16px 18px" }}>
                     <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 14 }}>
                       <div style={{ width: 20, height: 20, borderRadius: 6, background: "rgba(16,185,129,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                         <Icon name="finance" size={11} color="#10B981" />
@@ -4598,7 +4668,7 @@ const Purchases = () => {
                             <button key={method} onClick={() => setForm(f => ({ ...f, paymentMethod: method }))}
                               style={{
                                 padding: "7px 6px", borderRadius: 7,
-                                border: `1px solid ${active ? "rgba(16,185,129,0.5)" : "#1E2330"}`,
+                                border: `1px solid ${active ? "rgba(16,185,129,0.5)" : "#26334F"}`,
                                 background: active ? "rgba(16,185,129,0.12)" : "transparent",
                                 color: active ? "#10B981" : "#475569",
                                 fontSize: 11, fontWeight: 700, fontFamily: "IBM Plex Mono",
@@ -4629,7 +4699,7 @@ const Purchases = () => {
                             return (
                               <button key={s} onClick={() => setForm(f => ({ ...f, status: s }))}
                                 style={{
-                                  padding: "4px 8px", borderRadius: 6, border: `1px solid ${isActive ? col : "#1E2330"}`,
+                                  padding: "4px 8px", borderRadius: 6, border: `1px solid ${isActive ? col : "#26334F"}`,
                                   background: isActive ? `${col}20` : "transparent",
                                   color: isActive ? col : "#475569",
                                   fontSize: 10, fontWeight: 700, fontFamily: "IBM Plex Mono", cursor: "pointer",
@@ -4647,7 +4717,7 @@ const Purchases = () => {
               </>)}
 
               {/* ── NOTES ── */}
-              <div style={{ background: "#0D0F14", border: "1px solid #1E2330", borderRadius: 12, padding: "14px 18px", marginBottom: 16 }}>
+              <div style={{ background: "#0E1629", border: "1px solid #26334F", borderRadius: 12, padding: "14px 18px", marginBottom: 16 }}>
                 <label style={{ fontSize: 11, fontWeight: 700, color: "#475569", textTransform: "uppercase", letterSpacing: "0.06em", fontFamily: "IBM Plex Mono", display: "block", marginBottom: 8 }}>Notes (optional)</label>
                 <textarea value={form.notes} onChange={e => setForm(f => ({ ...f, notes: e.target.value }))} rows={2}
                   placeholder="Add any extra information or instructions…"
@@ -4658,8 +4728,8 @@ const Purchases = () => {
               {/* ── FOOTER ACTIONS ── */}
               <div style={{
                 display: "flex", alignItems: "center", justifyContent: "space-between",
-                padding: "14px 18px", background: "#0A0C10", borderRadius: 12,
-                border: "1px solid #1E2330",
+                padding: "14px 18px", background: "#0B1120", borderRadius: 12,
+                border: "1px solid #26334F",
               }}>
                 <div style={{ fontSize: 12, color: "#475569" }}>
                   {form.purchaseType === "regular" && total > 0 && (
@@ -4805,7 +4875,7 @@ const Inventory = () => {
           { label: "Low Stock", value: lowStockCount, isCurr: false, color: "#F59E0B", icon: "alert" },
           { label: "Out of Stock", value: outCount, isCurr: false, color: "#EF4444", icon: "alert" },
         ].map(s => (
-          <div key={s.label} style={{ background: "#111318", border: "1px solid #1E2330", borderRadius: 10, padding: "14px 16px", position: "relative", overflow: "hidden" }}>
+          <div key={s.label} style={{ background: "#131D33", border: "1px solid #26334F", borderRadius: 10, padding: "14px 16px", position: "relative", overflow: "hidden" }}>
             <div style={{ position: "absolute", top: 0, left: 0, width: 3, height: "100%", background: s.color, borderRadius: "10px 0 0 10px" }} />
             <div style={{ fontSize: 11, color: "#64748B", marginBottom: 6, fontFamily: "IBM Plex Mono", textTransform: "uppercase", letterSpacing: "0.06em" }}>{s.label}</div>
             <div style={{ fontSize: 20, fontWeight: 700, color: s.color, fontFamily: "IBM Plex Mono" }}>{s.value}</div>
@@ -4825,8 +4895,8 @@ const Inventory = () => {
             style={{
               appearance: "none",
               WebkitAppearance: "none",
-              background: "#111318",
-              border: `1px solid ${catFilter !== "all" ? (() => { const c = data.categories.find(c => String(c.id) === String(catFilter)); return c ? c.color : "#3B82F6"; })() : "#1E2330"}`,
+              background: "#131D33",
+              border: `1px solid ${catFilter !== "all" ? (() => { const c = data.categories.find(c => String(c.id) === String(catFilter)); return c ? c.color : "#3B82F6"; })() : "#26334F"}`,
               borderRadius: 8,
               color: catFilter !== "all" ? (() => { const c = data.categories.find(c => String(c.id) === String(catFilter)); return c ? c.color : "#3B82F6"; })() : "#94A3B8",
               padding: "9px 36px 9px 12px",
@@ -4841,13 +4911,13 @@ const Inventory = () => {
               boxShadow: catFilter !== "all" ? (() => { const c = data.categories.find(c => String(c.id) === String(catFilter)); return c ? `0 0 0 3px ${c.color}20` : "none"; })() : "none",
             }}
           >
-            <option value="all" style={{ background: "#111318", color: "#E2E8F0" }}>
+            <option value="all" style={{ background: "#131D33", color: "#E2E8F0" }}>
               All Categories ({data.products.length})
             </option>
             {data.categories.map(c => {
               const count = data.products.filter(p => String(p.category) === String(c.id)).length;
               return (
-                <option key={c.id} value={c.id} style={{ background: "#111318", color: "#E2E8F0" }}>
+                <option key={c.id} value={c.id} style={{ background: "#131D33", color: "#E2E8F0" }}>
                   {c.name} ({count})
                 </option>
               );
@@ -4866,13 +4936,13 @@ const Inventory = () => {
           <button
             onClick={() => { setCatFilter("all"); setPage(1); }}
             style={{
-              background: "none", border: "1px solid #1E2330", borderRadius: 8,
+              background: "none", border: "1px solid #26334F", borderRadius: 8,
               color: "#64748B", fontSize: 12, padding: "8px 12px", cursor: "pointer",
               fontFamily: "'Sora', sans-serif", display: "inline-flex", alignItems: "center", gap: 5,
               transition: "all 0.15s",
             }}
-            onMouseEnter={e => { e.currentTarget.style.color = "#E2E8F0"; e.currentTarget.style.borderColor = "#252B3B"; }}
-            onMouseLeave={e => { e.currentTarget.style.color = "#64748B"; e.currentTarget.style.borderColor = "#1E2330"; }}
+            onMouseEnter={e => { e.currentTarget.style.color = "#E2E8F0"; e.currentTarget.style.borderColor = "#34446A"; }}
+            onMouseLeave={e => { e.currentTarget.style.color = "#64748B"; e.currentTarget.style.borderColor = "#26334F"; }}
           >
             ✕ Clear
           </button>
@@ -4880,7 +4950,7 @@ const Inventory = () => {
       </div>
 
       {/* Table */}
-      <div style={{ background: "#111318", border: "1px solid #1E2330", borderRadius: 12, overflow: "hidden" }}>
+      <div style={{ background: "#131D33", border: "1px solid #26334F", borderRadius: 12, overflow: "hidden" }}>
         {filtered.length === 0 ? (
           <div style={{ textAlign: "center", padding: "48px 24px" }}>
             <div style={{ fontSize: 36, marginBottom: 10, opacity: 0.3 }}>📦</div>
@@ -4916,7 +4986,7 @@ const Inventory = () => {
                         <td style={{ color: "#475569", fontFamily: "IBM Plex Mono", fontSize: 11 }}>{rowNum}</td>
                         <td style={{ fontWeight: 600, color: "#E2E8F0", maxWidth: 200 }}>{p.name}</td>
                         <td>
-                          <span style={{ fontFamily: "IBM Plex Mono", fontSize: 12, background: "#161A22", border: "1px solid #1E2330", borderRadius: 5, padding: "2px 7px", color: "#94A3B8" }}>{p.sku}</span>
+                          <span style={{ fontFamily: "IBM Plex Mono", fontSize: 12, background: "#1A2640", border: "1px solid #26334F", borderRadius: 5, padding: "2px 7px", color: "#94A3B8" }}>{p.sku}</span>
                         </td>
                         <td>
                           {cat ? (
@@ -5010,7 +5080,7 @@ const Inventory = () => {
             </div>
           ))}
         </div>
-        <div style={{ display: "flex", gap: 10, justifyContent: "flex-end", marginTop: 16, paddingTop: 16, borderTop: "1px solid #1E2330" }}>
+        <div style={{ display: "flex", gap: 10, justifyContent: "flex-end", marginTop: 16, paddingTop: 16, borderTop: "1px solid #26334F" }}>
           <button className="btn btn-secondary" onClick={() => { setShowModal(false); setNewCatName(""); }}>Cancel</button>
           <button className="btn btn-primary" onClick={submit}><Icon name="check" size={14} /> {editItem ? "Update Product" : "Add Product"}</button>
         </div>
@@ -5124,7 +5194,7 @@ const Customers = () => {
                   { l: "Credit Limit", v: `${curr}${c.creditLimit.toLocaleString()}` },
                   { l: "Balance Due", v: (() => { const custSales = data.sales.filter(s => s.customerId === c.id); const lbal = custSales.reduce((bal, s) => s.saleType === "advance" ? bal - (s.paid||0) : s.saleType === "return" ? bal - (s.total||0) : bal + (s.total||0) - (s.paid||0), 0); return `${curr}${Math.abs(lbal).toLocaleString("en-US",{minimumFractionDigits:0})}${lbal > 0 ? " (Due)" : lbal < 0 ? " (Advance)" : ""}`; })(), color: (() => { const custSales = data.sales.filter(s => s.customerId === c.id); const lbal = custSales.reduce((bal, s) => s.saleType === "advance" ? bal - (s.paid||0) : s.saleType === "return" ? bal - (s.total||0) : bal + (s.total||0) - (s.paid||0), 0); return lbal > 0 ? "#EF4444" : "#10B981"; })() },
                 ].map(item => (
-                  <div key={item.l} style={{ background: "#161A22", borderRadius: 6, padding: "8px 10px" }}>
+                  <div key={item.l} style={{ background: "#1A2640", borderRadius: 6, padding: "8px 10px" }}>
                     <div style={{ fontSize: 10, color: "#64748B", fontFamily: "IBM Plex Mono", marginBottom: 2 }}>{item.l}</div>
                     <div style={{ fontSize: 13, fontWeight: 600, fontFamily: "IBM Plex Mono", color: item.color || "#E2E8F0" }}>{item.v}</div>
                   </div>
@@ -5780,7 +5850,7 @@ const CustomerLedger = ({ customer }) => {
     <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
 
       {/* ── Customer Header Card ─────────────────────────── */}
-      <div style={{ display: "flex", alignItems: "center", gap: 14, padding: "16px 20px", background: "linear-gradient(135deg, rgba(59,130,246,0.08), rgba(139,92,246,0.06))", borderRadius: 14, border: "1px solid #1E2330" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 14, padding: "16px 20px", background: "linear-gradient(135deg, rgba(59,130,246,0.08), rgba(139,92,246,0.06))", borderRadius: 14, border: "1px solid #26334F" }}>
         <div style={{ width: 54, height: 54, borderRadius: 14, background: "linear-gradient(135deg,#3B82F6,#8B5CF6)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22, fontWeight: 800, color: "white", flexShrink: 0, boxShadow: "0 4px 16px rgba(59,130,246,0.35)" }}>
           {customer.name[0].toUpperCase()}
         </div>
@@ -5822,7 +5892,7 @@ const CustomerLedger = ({ customer }) => {
       </div>
 
       {/* ── Formula Hint ─────────────────────────────────── */}
-      <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "8px 14px", background: "#161A22", borderRadius: 8, border: "1px solid #1E2330", flexWrap: "wrap" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "8px 14px", background: "#1A2640", borderRadius: 8, border: "1px solid #26334F", flexWrap: "wrap" }}>
         <span style={{ fontSize: 12 }}>📐</span>
         <span style={{ fontSize: 11, color: "#64748B" }}>
           <span style={{ fontFamily: "IBM Plex Mono", color: "#94A3B8", fontWeight: 600 }}>Line Total</span>
@@ -5833,7 +5903,7 @@ const CustomerLedger = ({ customer }) => {
       </div>
 
       {/* ── Date Filter & Controls ────────────────────────── */}
-      <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "11px 14px", background: "#161A22", borderRadius: 10, border: "1px solid #1E2330", flexWrap: "wrap" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "11px 14px", background: "#1A2640", borderRadius: 10, border: "1px solid #26334F", flexWrap: "wrap" }}>
         <Icon name="calendar" size={14} color="#64748B" />
         <span style={muted}>FROM</span>
         <input type="date" value={dateFrom} onChange={e => { setDateFrom(e.target.value); setLedgerPage(1); }} style={{ width: 148 }} />
@@ -5861,7 +5931,7 @@ const CustomerLedger = ({ customer }) => {
                 style={{
                   padding: "4px 10px", borderRadius: 6, border: "none", cursor: "pointer",
                   fontSize: 11, fontFamily: "IBM Plex Mono",
-                  background: isActive ? "#3B82F6" : "#1E2330",
+                  background: isActive ? "#3B82F6" : "#26334F",
                   color: isActive ? "white" : "#64748B",
                   transition: "all 0.15s",
                 }}
@@ -5876,7 +5946,7 @@ const CustomerLedger = ({ customer }) => {
       </div>
 
       {/* ── Ledger Table ─────────────────────────────────── */}
-      <div style={{ border: "1px solid #1E2330", borderRadius: 12, overflow: "hidden" }}>
+      <div style={{ border: "1px solid #26334F", borderRadius: 12, overflow: "hidden" }}>
         {rows.length === 0 ? (
           <div style={{ padding: 48, textAlign: "center" }}>
             <div style={{ fontSize: 36, marginBottom: 12 }}>📋</div>
@@ -5898,7 +5968,7 @@ const CustomerLedger = ({ customer }) => {
                     <th style={{ textAlign: "right", minWidth: 88 }}>Subtotal</th>
                     <th style={{ textAlign: "right", minWidth: 72, background: "rgba(245,158,11,0.12)", color: "#F59E0B" }}>{taxName}</th>
                     <th style={{ textAlign: "right", minWidth: 95, background: "rgba(59,130,246,0.12)", color: "#93C5FD" }}>Line Total</th>
-                    <th style={{ textAlign: "right", minWidth: 88, borderLeft: "2px solid #1E2330" }}>Paid</th>
+                    <th style={{ textAlign: "right", minWidth: 88, borderLeft: "2px solid #26334F" }}>Paid</th>
                     <th style={{ minWidth: 88 }}>Method</th>
                     <th style={{ textAlign: "right", minWidth: 80 }}>Due</th>
                     <th style={{ minWidth: 78 }}>Status</th>
@@ -5913,13 +5983,13 @@ const CustomerLedger = ({ customer }) => {
                       <tr key={`${row.saleId}-${i}`} style={{ background: rowBg }}>
                         {/* Invoice # — rowspan */}
                         {row.isFirst && (
-                          <td rowSpan={row.rowSpan} style={{ ...monoSm, color: invColor, fontWeight: 700, verticalAlign: "middle", borderRight: "1px solid #1E2330", whiteSpace: "nowrap" }}>
+                          <td rowSpan={row.rowSpan} style={{ ...monoSm, color: invColor, fontWeight: 700, verticalAlign: "middle", borderRight: "1px solid #26334F", whiteSpace: "nowrap" }}>
                             {row.invoiceNo}
                           </td>
                         )}
                         {/* Date — rowspan */}
                         {row.isFirst && (
-                          <td rowSpan={row.rowSpan} style={{ ...monoSm, color: "#94A3B8", verticalAlign: "middle", borderRight: "1px solid #1E2330", whiteSpace: "nowrap" }}>
+                          <td rowSpan={row.rowSpan} style={{ ...monoSm, color: "#94A3B8", verticalAlign: "middle", borderRight: "1px solid #26334F", whiteSpace: "nowrap" }}>
                             {row.date}
                           </td>
                         )}
@@ -5959,7 +6029,7 @@ const CustomerLedger = ({ customer }) => {
                         </td>
                         {/* Paid — rowspan */}
                         {row.isFirst && (
-                          <td rowSpan={row.rowSpan} style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#10B981", verticalAlign: "middle", borderLeft: "2px solid #1E2330" }}>
+                          <td rowSpan={row.rowSpan} style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#10B981", verticalAlign: "middle", borderLeft: "2px solid #26334F" }}>
                             {(row.isReturn || row.isDeducted || row.isAidTds) ? "—" : `${curr}${Number(row.salePaid).toFixed(2)}`}
                           </td>
                         )}
@@ -5992,12 +6062,12 @@ const CustomerLedger = ({ customer }) => {
 
                 {/* ── Period Totals Footer ── */}
                 <tfoot>
-                  <tr style={{ background: "#0D0F14", borderTop: "2px solid #1E2330" }}>
+                  <tr style={{ background: "#0E1629", borderTop: "2px solid #26334F" }}>
                     <td colSpan={7} style={{ ...monoSm, fontWeight: 700, color: "#64748B", textTransform: "uppercase", letterSpacing: "0.06em", padding: "10px 14px" }}>Period Totals</td>
                     <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#94A3B8", padding: "10px 14px" }}>{curr}{(totalBilled - totalVAT).toFixed(2)}</td>
                     <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#F59E0B", padding: "10px 14px", background: "rgba(245,158,11,0.06)" }}>{curr}{totalVAT.toFixed(2)}</td>
                     <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#3B82F6", padding: "10px 14px", background: "rgba(59,130,246,0.06)" }}>{curr}{totalBilled.toFixed(2)}</td>
-                    <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#10B981", padding: "10px 14px", borderLeft: "2px solid #1E2330" }}>{curr}{totalPaid.toFixed(2)}</td>
+                    <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#10B981", padding: "10px 14px", borderLeft: "2px solid #26334F" }}>{curr}{totalPaid.toFixed(2)}</td>
                     <td style={{ padding: "10px 14px" }} />
                     <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: totalDue > 0 ? "#EF4444" : "#64748B", padding: "10px 14px" }}>{curr}{totalDue.toFixed(2)}</td>
                     <td style={{ padding: "10px 14px" }} />
@@ -6008,7 +6078,7 @@ const CustomerLedger = ({ customer }) => {
 
             {/* Pagination */}
             {rows.length > LEDGER_PER_PAGE && (
-              <div style={{ padding: "10px 16px", borderTop: "1px solid #1E2330", background: "#0D0F14" }}>
+              <div style={{ padding: "10px 16px", borderTop: "1px solid #26334F", background: "#0E1629" }}>
                 <Pagination page={ledgerPage} total={rows.length} perPage={LEDGER_PER_PAGE} onChange={setLedgerPage} />
               </div>
             )}
@@ -6085,7 +6155,7 @@ const Suppliers = () => {
                   <div style={{ width: 40, height: 40, borderRadius: 10, background: "linear-gradient(135deg, #10B981, #3B82F6)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14, fontWeight: 700, color: "white" }}>{s.name[0]}</div>
                   <div>
                     <div style={{ fontSize: 14, fontWeight: 600, color: "#E2E8F0" }}>{s.name}</div>
-                    <div style={{ display: "flex", gap: 2 }}>{Array.from({ length: 5 }, (_, i) => <Icon key={i} name="star" size={10} color={i < s.rating ? "#F59E0B" : "#1E2330"} />)}</div>
+                    <div style={{ display: "flex", gap: 2 }}>{Array.from({ length: 5 }, (_, i) => <Icon key={i} name="star" size={10} color={i < s.rating ? "#F59E0B" : "#26334F"} />)}</div>
                   </div>
                 </div>
                 <div style={{ display: "flex", gap: 4 }}>
@@ -6101,7 +6171,7 @@ const Suppliers = () => {
                   { l: "Ordered Value", v: `${curr}${totalOrdered.toLocaleString("en-US", { maximumFractionDigits: 0 })}` },
                   { l: "Amount Due", v: `${curr}${s.balance.toLocaleString()}`, color: s.balance > 0 ? "#EF4444" : "#10B981" },
                 ].map(item => (
-                  <div key={item.l} style={{ background: "#161A22", borderRadius: 6, padding: "8px 10px" }}>
+                  <div key={item.l} style={{ background: "#1A2640", borderRadius: 6, padding: "8px 10px" }}>
                     <div style={{ fontSize: 10, color: "#64748B", fontFamily: "IBM Plex Mono", marginBottom: 2 }}>{item.l}</div>
                     <div style={{ fontSize: 13, fontWeight: 600, fontFamily: "IBM Plex Mono", color: item.color || "#E2E8F0" }}>{item.v}</div>
                   </div>
@@ -6659,14 +6729,14 @@ const SupplierLedger = ({ supplier }) => {
     <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
 
       {/* ── Supplier Header Card ─────────────────────────── */}
-      <div style={{ display: "flex", alignItems: "center", gap: 14, padding: "16px 20px", background: "linear-gradient(135deg, rgba(16,185,129,0.08), rgba(59,130,246,0.06))", borderRadius: 14, border: "1px solid #1E2330" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 14, padding: "16px 20px", background: "linear-gradient(135deg, rgba(16,185,129,0.08), rgba(59,130,246,0.06))", borderRadius: 14, border: "1px solid #26334F" }}>
         <div style={{ width: 54, height: 54, borderRadius: 14, background: "linear-gradient(135deg,#10B981,#3B82F6)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22, fontWeight: 800, color: "white", flexShrink: 0, boxShadow: "0 4px 16px rgba(16,185,129,0.35)" }}>
           {supplier.name[0].toUpperCase()}
         </div>
         <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
             <div style={{ fontSize: 17, fontWeight: 700, color: "#E2E8F0" }}>{supplier.name}</div>
-            <div style={{ display: "flex", gap: 2 }}>{Array.from({ length: 5 }, (_, i) => <Icon key={i} name="star" size={11} color={i < (supplier.rating || 0) ? "#F59E0B" : "#1E2330"} />)}</div>
+            <div style={{ display: "flex", gap: 2 }}>{Array.from({ length: 5 }, (_, i) => <Icon key={i} name="star" size={11} color={i < (supplier.rating || 0) ? "#F59E0B" : "#26334F"} />)}</div>
           </div>
           <div style={{ fontSize: 12, color: "#64748B", marginTop: 4, display: "flex", gap: 14, flexWrap: "wrap" }}>
             {supplier.email   && <span>✉ {supplier.email}</span>}
@@ -6699,7 +6769,7 @@ const SupplierLedger = ({ supplier }) => {
       </div>
 
       {/* ── Date Filter & Controls ────────────────────────── */}
-      <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "11px 14px", background: "#161A22", borderRadius: 10, border: "1px solid #1E2330", flexWrap: "wrap" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "11px 14px", background: "#1A2640", borderRadius: 10, border: "1px solid #26334F", flexWrap: "wrap" }}>
         <Icon name="calendar" size={14} color="#64748B" />
         <span style={muted}>FROM</span>
         <input type="date" value={dateFrom} onChange={e => { setDateFrom(e.target.value); setLedgerPage(1); }} style={{ width: 148 }} />
@@ -6726,7 +6796,7 @@ const SupplierLedger = ({ supplier }) => {
                 style={{
                   padding: "4px 10px", borderRadius: 6, border: "none", cursor: "pointer",
                   fontSize: 11, fontFamily: "IBM Plex Mono",
-                  background: isActive ? "#10B981" : "#1E2330",
+                  background: isActive ? "#10B981" : "#26334F",
                   color: isActive ? "white" : "#64748B",
                   transition: "all 0.15s",
                 }}
@@ -6741,7 +6811,7 @@ const SupplierLedger = ({ supplier }) => {
       </div>
 
       {/* ── Ledger Table ─────────────────────────────────── */}
-      <div style={{ border: "1px solid #1E2330", borderRadius: 12, overflow: "hidden" }}>
+      <div style={{ border: "1px solid #26334F", borderRadius: 12, overflow: "hidden" }}>
         {rows.length === 0 ? (
           <EmptyState message="No purchase orders in this date range" />
         ) : (
@@ -6757,7 +6827,7 @@ const SupplierLedger = ({ supplier }) => {
                     <th style={{ textAlign: "center", minWidth: 58 }}>Unit</th>
                     <th style={{ textAlign: "right", minWidth: 90 }}>Unit Price</th>
                     <th style={{ textAlign: "right", minWidth: 95, background: "rgba(16,185,129,0.12)", color: "#6EE7B7" }}>Line Total</th>
-                    <th style={{ textAlign: "right", minWidth: 88, borderLeft: "2px solid #1E2330" }}>Paid</th>
+                    <th style={{ textAlign: "right", minWidth: 88, borderLeft: "2px solid #26334F" }}>Paid</th>
                     <th style={{ minWidth: 88 }}>Method</th>
                     <th style={{ textAlign: "right", minWidth: 80 }}>Due</th>
                     <th style={{ minWidth: 78 }}>Status</th>
@@ -6771,12 +6841,12 @@ const SupplierLedger = ({ supplier }) => {
                     return (
                       <tr key={`${row.poId}-${i}`} style={{ background: rowBg }}>
                         {row.isFirst && (
-                          <td rowSpan={row.rowSpan} style={{ ...monoSm, color: idColor, fontWeight: 700, verticalAlign: "middle", borderRight: "1px solid #1E2330", whiteSpace: "nowrap" }}>
+                          <td rowSpan={row.rowSpan} style={{ ...monoSm, color: idColor, fontWeight: 700, verticalAlign: "middle", borderRight: "1px solid #26334F", whiteSpace: "nowrap" }}>
                             {row.poId}
                           </td>
                         )}
                         {row.isFirst && (
-                          <td rowSpan={row.rowSpan} style={{ ...monoSm, color: "#94A3B8", verticalAlign: "middle", borderRight: "1px solid #1E2330", whiteSpace: "nowrap" }}>
+                          <td rowSpan={row.rowSpan} style={{ ...monoSm, color: "#94A3B8", verticalAlign: "middle", borderRight: "1px solid #26334F", whiteSpace: "nowrap" }}>
                             {row.date}
                           </td>
                         )}
@@ -6798,7 +6868,7 @@ const SupplierLedger = ({ supplier }) => {
                           {row.isReturn ? `↩ ${curr}${Number(row.lineTotal).toFixed(2)}` : (row.isDeducted || row.isAidTds) ? `− ${curr}${Math.abs(Number(row.lineTotal)).toFixed(2)}` : `${curr}${Number(row.lineTotal).toFixed(2)}`}
                         </td>
                         {row.isFirst && (
-                          <td rowSpan={row.rowSpan} style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#10B981", verticalAlign: "middle", borderLeft: "2px solid #1E2330" }}>
+                          <td rowSpan={row.rowSpan} style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#10B981", verticalAlign: "middle", borderLeft: "2px solid #26334F" }}>
                             {(row.isReturn || row.isDeducted || row.isAidTds) ? "—" : `${curr}${Number(row.poPaid).toFixed(2)}`}
                           </td>
                         )}
@@ -6827,10 +6897,10 @@ const SupplierLedger = ({ supplier }) => {
                 </tbody>
 
                 <tfoot>
-                  <tr style={{ background: "#0D0F14", borderTop: "2px solid #1E2330" }}>
+                  <tr style={{ background: "#0E1629", borderTop: "2px solid #26334F" }}>
                     <td colSpan={6} style={{ ...monoSm, fontWeight: 700, color: "#64748B", textTransform: "uppercase", letterSpacing: "0.06em", padding: "10px 14px" }}>Period Totals</td>
                     <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#10B981", padding: "10px 14px", background: "rgba(16,185,129,0.06)" }}>{curr}{totalOrdered.toFixed(2)}</td>
-                    <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#3B82F6", padding: "10px 14px", borderLeft: "2px solid #1E2330" }}>{curr}{totalPaid.toFixed(2)}</td>
+                    <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#3B82F6", padding: "10px 14px", borderLeft: "2px solid #26334F" }}>{curr}{totalPaid.toFixed(2)}</td>
                     <td style={{ padding: "10px 14px" }} />
                     <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: totalDue > 0 ? "#EF4444" : "#64748B", padding: "10px 14px" }}>{curr}{totalDue.toFixed(2)}</td>
                     <td style={{ padding: "10px 14px" }} />
@@ -6840,7 +6910,7 @@ const SupplierLedger = ({ supplier }) => {
             </div>
 
             {rows.length > LEDGER_PER_PAGE && (
-              <div style={{ padding: "10px 16px", borderTop: "1px solid #1E2330", background: "#0D0F14" }}>
+              <div style={{ padding: "10px 16px", borderTop: "1px solid #26334F", background: "#0E1629" }}>
                 <Pagination page={ledgerPage} total={rows.length} perPage={LEDGER_PER_PAGE} onChange={setLedgerPage} />
               </div>
             )}
@@ -6919,7 +6989,7 @@ const Finance = () => {
       <div style={{ display: "grid", gridTemplateColumns: "3fr 2fr", gap: 16, marginBottom: 20 }}>
         {/* P&L Statement */}
         <div className="card" style={{ overflow: "hidden" }}>
-          <div style={{ padding: "16px 20px", borderBottom: "1px solid #1E2330", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <div style={{ padding: "16px 20px", borderBottom: "1px solid #26334F", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
             <div style={{ fontSize: 14, fontWeight: 600, color: "#E2E8F0" }}>Profit & Loss Statement</div>
             <span className="badge badge-blue">Current Period</span>
           </div>
@@ -6932,7 +7002,7 @@ const Finance = () => {
               { label: "Net Profit", value: netProfit, color: netProfit >= 0 ? "#8B5CF6" : "#EF4444", indent: 0, bold: true },
               { label: "Net Margin", value: null, display: `${margin}%`, color: "#8B5CF6", indent: 0 },
             ].map((row, i) => (
-              <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "10px 0", borderBottom: i < 5 ? "1px solid #111318" : "none", paddingLeft: row.indent * 12 }}>
+              <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "10px 0", borderBottom: i < 5 ? "1px solid #131D33" : "none", paddingLeft: row.indent * 12 }}>
                 <span style={{ fontSize: 13, color: row.bold ? "#E2E8F0" : "#94A3B8", fontWeight: row.bold ? 700 : 400 }}>{row.label}</span>
                 <span style={{ fontFamily: "IBM Plex Mono", fontSize: 13, color: row.color, fontWeight: row.bold ? 700 : 400 }}>
                   {row.display || `${row.value >= 0 ? "" : "-"}${curr}${Math.abs(row.value).toLocaleString("en-US", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`}
@@ -6944,7 +7014,7 @@ const Finance = () => {
 
         {/* Expense Breakdown */}
         <div className="card" style={{ overflow: "hidden" }}>
-          <div style={{ padding: "16px 20px", borderBottom: "1px solid #1E2330" }}>
+          <div style={{ padding: "16px 20px", borderBottom: "1px solid #26334F" }}>
             <div style={{ fontSize: 14, fontWeight: 600, color: "#E2E8F0" }}>Expense Breakdown</div>
           </div>
           <div style={{ padding: 20 }}>
@@ -6965,7 +7035,7 @@ const Finance = () => {
 
       {/* Expense Table */}
       <div className="card" style={{ overflow: "hidden" }}>
-        <div style={{ padding: "16px 20px", borderBottom: "1px solid #1E2330" }}>
+        <div style={{ padding: "16px 20px", borderBottom: "1px solid #26334F" }}>
           <div style={{ fontSize: 14, fontWeight: 600, color: "#E2E8F0" }}>Expense History</div>
         </div>
         <table>
@@ -7237,7 +7307,7 @@ const Reports = () => {
         <div style={{ display: "flex", gap: 6 }}>
           {reportTypes.map(r => (
             <button key={r.id} onClick={() => setActiveReport(r.id)} className="btn btn-secondary btn-sm"
-              style={{ background: activeReport === r.id ? "#3B82F6" : "#161A22", color: activeReport === r.id ? "white" : "#94A3B8", border: `1px solid ${activeReport === r.id ? "#3B82F6" : "#1E2330"}` }}>
+              style={{ background: activeReport === r.id ? "#3B82F6" : "#1A2640", color: activeReport === r.id ? "white" : "#94A3B8", border: `1px solid ${activeReport === r.id ? "#3B82F6" : "#26334F"}` }}>
               <Icon name={r.icon} size={13} /> {r.label}
             </button>
           ))}
@@ -7267,7 +7337,7 @@ const Reports = () => {
 
       {/* Report Table */}
       <div className="card" style={{ overflow: "hidden" }}>
-        <div style={{ padding: "16px 20px", borderBottom: "1px solid #1E2330", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        <div style={{ padding: "16px 20px", borderBottom: "1px solid #26334F", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <div style={{ fontSize: 14, fontWeight: 600, color: "#E2E8F0" }}>
             {reportTypes.find(r => r.id === activeReport)?.label}
           </div>
@@ -7325,7 +7395,7 @@ const Reports = () => {
               { label: "Net Profit / Loss", value: profit, color: profit >= 0 ? "#8B5CF6" : "#EF4444", bold: true },
               { label: "Profit Margin", value: null, display: `${salesTotal > 0 ? ((profit / salesTotal) * 100).toFixed(2) : 0}%`, color: "#8B5CF6" },
             ].map((row, i) => (
-              <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "14px 0", borderBottom: "1px solid #111318", fontSize: row.bold ? 15 : 13, fontWeight: row.bold ? 700 : 400 }}>
+              <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "14px 0", borderBottom: "1px solid #131D33", fontSize: row.bold ? 15 : 13, fontWeight: row.bold ? 700 : 400 }}>
                 <span style={{ color: row.bold ? "#E2E8F0" : "#94A3B8" }}>{row.label}</span>
                 <span style={{ fontFamily: "IBM Plex Mono", color: row.color }}>{row.display || `${curr}${Math.abs(row.value || 0).toLocaleString("en-US", { minimumFractionDigits: 2 })}`}</span>
               </div>
@@ -7440,7 +7510,7 @@ Provide a concise, data-driven analysis in 2-3 paragraphs with bullet points for
             { label: "Inventory Turnover", value: "4.2x/yr", trend: "+12%", color: "#F59E0B" },
             { label: "Payment Collection Rate", value: `${data.sales.reduce((s, x) => s + x.total, 0) > 0 ? ((data.sales.reduce((s, x) => s + x.paid, 0) / data.sales.reduce((s, x) => s + x.total, 0)) * 100).toFixed(1) : "0"}%`, trend: "-2%", color: "#8B5CF6" },
           ].map(m => (
-            <div key={m.label} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "10px 0", borderBottom: "1px solid #111318" }}>
+            <div key={m.label} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "10px 0", borderBottom: "1px solid #131D33" }}>
               <span style={{ fontSize: 12, color: "#94A3B8" }}>{m.label}</span>
               <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                 <span style={{ fontFamily: "IBM Plex Mono", fontSize: 13, color: "#E2E8F0", fontWeight: 600 }}>{m.value}</span>
@@ -7492,7 +7562,7 @@ Provide a concise, data-driven analysis in 2-3 paragraphs with bullet points for
         </div>
 
         {insight && (
-          <div style={{ background: "#0D0F14", border: "1px solid #1E2330", borderRadius: 10, padding: 20, animation: "fadeIn 0.3s ease" }}>
+          <div style={{ background: "#0E1629", border: "1px solid #26334F", borderRadius: 10, padding: 20, animation: "fadeIn 0.3s ease" }}>
             <div style={{ display: "flex", align: "center", gap: 6, marginBottom: 12 }}>
               <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#10B981", marginTop: 5 }} />
               <span style={{ fontSize: 11, color: "#10B981", fontFamily: "IBM Plex Mono", fontWeight: 600 }}>AI ANALYSIS</span>
@@ -7650,7 +7720,7 @@ const UsersTab = () => {
 
       {/* Add / Edit Form */}
       {showForm && (
-        <div style={{ background: "#161A22", border: "1px solid #1E2330", borderRadius: 12, padding: 20, marginBottom: 24, animation: "fadeIn 0.2s ease" }}>
+        <div style={{ background: "#1A2640", border: "1px solid #26334F", borderRadius: 12, padding: 20, marginBottom: 24, animation: "fadeIn 0.2s ease" }}>
           <div style={{ fontSize: 14, fontWeight: 600, color: "#E2E8F0", marginBottom: 16 }}>
             {editId ? "Edit User" : "Add New User"}
           </div>
@@ -7688,7 +7758,7 @@ const UsersTab = () => {
               <label style={{ display: "flex", alignItems: "center", gap: 8, cursor: "pointer", userSelect: "none" }}>
                 <div
                   onClick={() => setForm(f => ({ ...f, active: !f.active }))}
-                  style={{ width: 40, height: 22, borderRadius: 11, background: form.active ? "#10B981" : "#1E2330", border: `1px solid ${form.active ? "#10B981" : "#252B3B"}`, position: "relative", cursor: "pointer", transition: "all 0.2s" }}
+                  style={{ width: 40, height: 22, borderRadius: 11, background: form.active ? "#10B981" : "#26334F", border: `1px solid ${form.active ? "#10B981" : "#34446A"}`, position: "relative", cursor: "pointer", transition: "all 0.2s" }}
                 >
                   <div style={{ width: 16, height: 16, borderRadius: "50%", background: "white", position: "absolute", top: 2, left: form.active ? 20 : 2, transition: "left 0.2s" }} />
                 </div>
@@ -7711,7 +7781,7 @@ const UsersTab = () => {
           <p style={{ fontSize: 12, marginTop: 6 }}>The built-in admin account (hongtaippl@gmail.com) is always available.</p>
         </div>
       ) : (
-        <div style={{ border: "1px solid #1E2330", borderRadius: 10, overflow: "hidden" }}>
+        <div style={{ border: "1px solid #26334F", borderRadius: 10, overflow: "hidden" }}>
           <table>
             <thead><tr><th>User</th><th>Email</th><th>Role</th><th>Status</th><th>Last Login</th><th>Actions</th></tr></thead>
             <tbody>
@@ -7834,7 +7904,7 @@ const Settings = () => {
             <div>
               <h3 style={{ fontSize: 15, fontWeight: 700, color: "#E2E8F0", marginBottom: 20 }}>Backup & Restore</h3>
               <div style={{ display: "grid", gap: 16 }}>
-                <div style={{ padding: 20, background: "#161A22", borderRadius: 10, border: "1px solid #1E2330" }}>
+                <div style={{ padding: 20, background: "#1A2640", borderRadius: 10, border: "1px solid #26334F" }}>
                   <div style={{ fontSize: 14, fontWeight: 600, color: "#E2E8F0", marginBottom: 6 }}>Export Backup</div>
                   <div style={{ fontSize: 12, color: "#64748B", marginBottom: 12 }}>Download a full backup of all your data as JSON</div>
                   <button className="btn btn-primary" onClick={() => {
@@ -7844,7 +7914,7 @@ const Settings = () => {
                     toast("Backup downloaded!", "success");
                   }}><Icon name="download" size={14} /> Download Backup</button>
                 </div>
-                <div style={{ padding: 20, background: "#161A22", borderRadius: 10, border: "1px solid #1E2330" }}>
+                <div style={{ padding: 20, background: "#1A2640", borderRadius: 10, border: "1px solid #26334F" }}>
                   <div style={{ fontSize: 14, fontWeight: 600, color: "#E2E8F0", marginBottom: 6 }}>System Information</div>
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 10 }}>
                     {[
@@ -7852,7 +7922,7 @@ const Settings = () => {
                       ["Suppliers", data.suppliers.length], ["Sales Records", data.sales.length],
                       ["Purchase Orders", data.purchases.length], ["Expense Records", data.expenses.length],
                     ].map(([l, v]) => (
-                      <div key={l} style={{ padding: "8px 12px", background: "#111318", borderRadius: 6 }}>
+                      <div key={l} style={{ padding: "8px 12px", background: "#131D33", borderRadius: 6 }}>
                         <div style={{ fontSize: 11, color: "#64748B" }}>{l}</div>
                         <div style={{ fontSize: 16, fontWeight: 700, color: "#E2E8F0", fontFamily: "IBM Plex Mono" }}>{v}</div>
                       </div>
@@ -7864,7 +7934,7 @@ const Settings = () => {
           )}
 
           {(activeTab === "company" || activeTab === "tax") && (
-            <div style={{ marginTop: 20, paddingTop: 20, borderTop: "1px solid #1E2330" }}>
+            <div style={{ marginTop: 20, paddingTop: 20, borderTop: "1px solid #26334F" }}>
               <button className="btn btn-primary" onClick={save}><Icon name="check" size={14} /> Save Settings</button>
             </div>
           )}
@@ -8003,7 +8073,7 @@ const RecycleBin = () => {
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8 }}>
           {rows.map(([k, v]) => (
-            <div key={k} style={{ padding: "8px 12px", background: "#111318", borderRadius: 8, minWidth: 0 }}>
+            <div key={k} style={{ padding: "8px 12px", background: "#131D33", borderRadius: 8, minWidth: 0 }}>
               <div style={{ fontSize: 10, color: "#64748B", textTransform: "uppercase", letterSpacing: "0.05em" }}>{prettyKey(k)}</div>
               <div className="mono" style={{ fontSize: 12, color: "#E2E8F0", wordBreak: "break-all" }}>
                 {k === "password" ? "••••••••" : typeof v === "boolean" ? (v ? "Yes" : "No") : String(v)}
@@ -8017,7 +8087,7 @@ const RecycleBin = () => {
             {item.items.map((it, i) => {
               const prod = data.products.find(p => p.id === it.productId);
               return (
-                <div key={i} style={{ display: "flex", justifyContent: "space-between", gap: 10, padding: "6px 12px", background: "#111318", borderRadius: 6, marginBottom: 4, fontSize: 12 }}>
+                <div key={i} style={{ display: "flex", justifyContent: "space-between", gap: 10, padding: "6px 12px", background: "#131D33", borderRadius: 6, marginBottom: 4, fontSize: 12 }}>
                   <span style={{ color: "#CBD5E1" }}>{it.name || it.productName || prod?.name || it.productId}</span>
                   <span className="mono" style={{ color: "#94A3B8" }}>{it.qty} × {curr}{Number(it.price || 0).toFixed(2)}</span>
                 </div>
@@ -8046,7 +8116,7 @@ const RecycleBin = () => {
           <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 14 }}>
             {[{ id: "all", label: "All", n: bin.length, color: "#3B82F6" }, ...Object.entries(RECYCLE_TYPES).filter(([k]) => counts[k] > 0).map(([k, m]) => ({ id: k, label: m.label, n: counts[k], color: m.color }))].map(t => (
               <button key={t.id} onClick={() => changeType(t.id)} className="btn btn-secondary btn-sm"
-                style={{ background: typeFilter === t.id ? t.color : "#161A22", color: typeFilter === t.id ? "white" : "#94A3B8", border: `1px solid ${typeFilter === t.id ? t.color : "#1E2330"}` }}>
+                style={{ background: typeFilter === t.id ? t.color : "#1A2640", color: typeFilter === t.id ? "white" : "#94A3B8", border: `1px solid ${typeFilter === t.id ? t.color : "#26334F"}` }}>
                 {t.label} ({t.n})
               </button>
             ))}
@@ -8138,14 +8208,14 @@ const LoginScreen = ({ onLogin, loading, isOnline }) => {
   return (
     <>
       <GlobalStyles />
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100vh", background: "#0A0C10" }}>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100vh", background: "#0B1120" }}>
         <div style={{ width: "100%", maxWidth: 400, padding: "0 20px" }}>
           <div style={{ textAlign: "center", marginBottom: 40 }}>
             <div style={{ width: 56, height: 56, borderRadius: 16, background: "linear-gradient(135deg, #3B82F6, #8B5CF6)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 24, fontWeight: 800, color: "white", margin: "0 auto 16px" }}>B</div>
             <div style={{ fontSize: 22, fontWeight: 800, color: "#E2E8F0", fontFamily: "Sora, sans-serif" }}>Hongtai ERP</div>
             <div style={{ fontSize: 13, color: "#64748B", marginTop: 4, fontFamily: "IBM Plex Mono, monospace" }}>Sign in to your account</div>
           </div>
-          <div style={{ background: "#111318", border: "1px solid #1E2330", borderRadius: 16, padding: 32 }}>
+          <div style={{ background: "#131D33", border: "1px solid #26334F", borderRadius: 16, padding: 32 }}>
             {!isOnline && (
               <div style={{ background: "rgba(239,68,68,0.1)", border: "1px solid rgba(239,68,68,0.2)", borderRadius: 8, padding: "10px 12px", marginBottom: 16, fontSize: 13, color: "#EF4444", display: "flex", alignItems: "center", gap: 8 }}>
                 <span>📡</span> No internet connection. Sign in requires an active connection.
@@ -9100,7 +9170,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
       })()}
 
       {/* Tabs */}
-      <div style={{ display: "flex", gap: 0, marginBottom: 20, borderBottom: "1px solid #1E2330" }}>
+      <div style={{ display: "flex", gap: 0, marginBottom: 20, borderBottom: "1px solid #26334F" }}>
         {[["ledger", "Ledger / 账本"], ["report", "Monthly Report / 月报"], ["daily", "Daily Report / 日报"], ["category", "Category Report / 类别报表"]].map(([id, label]) => (
           <button key={id} onClick={() => setActiveTab(id)}
             style={{ background: "none", border: "none", borderBottom: `2px solid ${activeTab === id ? "#3B82F6" : "transparent"}`, padding: "10px 20px", cursor: "pointer", color: activeTab === id ? "#3B82F6" : "#64748B", fontWeight: activeTab === id ? 600 : 400, fontSize: 13, fontFamily: "Sora, sans-serif", transition: "all .15s" }}>
@@ -9211,12 +9281,12 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
                       </td>
                       <td><span className="badge badge-blue" style={{ fontSize: 10 }}>{entry.category}</span></td>
                       <td style={{ textAlign: "right" }}>
-                        <span className="mono" style={{ color: N(entry.debit) > 0 ? "#10B981" : "#1E2330", fontWeight: N(entry.debit) > 0 ? 600 : 400 }}>
+                        <span className="mono" style={{ color: N(entry.debit) > 0 ? "#10B981" : "#26334F", fontWeight: N(entry.debit) > 0 ? 600 : 400 }}>
                           {N(entry.debit) > 0 ? moneyFmt(entry.debit) : "—"}
                         </span>
                       </td>
                       <td style={{ textAlign: "right" }}>
-                        <span className="mono" style={{ color: N(entry.credit) > 0 ? "#EF4444" : "#1E2330", fontWeight: N(entry.credit) > 0 ? 600 : 400 }}>
+                        <span className="mono" style={{ color: N(entry.credit) > 0 ? "#EF4444" : "#26334F", fontWeight: N(entry.credit) > 0 ? 600 : 400 }}>
                           {N(entry.credit) > 0 ? moneyFmt(entry.credit) : "—"}
                         </span>
                       </td>
@@ -9239,7 +9309,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
 
                 {filtered.length > 0 && (
                   <tfoot>
-                    <tr style={{ background: "#0D0F14" }}>
+                    <tr style={{ background: "#0E1629" }}>
                       <td colSpan={4} style={{ fontFamily: "IBM Plex Mono", fontSize: 11, color: "#64748B", fontWeight: 600, textTransform: "uppercase" }}>Period Totals / 期间合计</td>
                       <td style={{ textAlign: "right" }}>
                         <span className="mono" style={{ color: "#10B981", fontWeight: 700 }}>{moneyFmt(filtered.reduce((s, e) => s + N(e.debit), 0))}</span>
@@ -9354,7 +9424,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
                     </div>
                     <div style={{ marginLeft: 10 }}>
                       {c.items.map(it => (
-                        <div key={it.id} style={{ display: "flex", justifyContent: "space-between", padding: "4px 0", borderBottom: "1px solid #1E2330", fontSize: 12 }}>
+                        <div key={it.id} style={{ display: "flex", justifyContent: "space-between", padding: "4px 0", borderBottom: "1px solid #26334F", fontSize: 12 }}>
                           <span style={{ color: "#94A3B8" }}>
                             <span className="mono" style={{ color: "#64748B", marginRight: 8, fontSize: 11 }}>{it.date}</span>
                             {it.description}
@@ -9377,7 +9447,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
               {reportEntries.filter(e => N(e.cash) !== 0).length === 0
                 ? <EmptyState message="No cash entries this month / 本月无现金记录" />
                 : reportEntries.filter(e => N(e.cash) !== 0).map(e => (
-                    <div key={e.id} style={{ display: "flex", justifyContent: "space-between", padding: "5px 0", borderBottom: "1px solid #1E2330", fontSize: 12 }}>
+                    <div key={e.id} style={{ display: "flex", justifyContent: "space-between", padding: "5px 0", borderBottom: "1px solid #26334F", fontSize: 12 }}>
                       <span style={{ color: "#94A3B8" }}>{e.description}</span>
                       <span className="mono" style={{ color: N(e.cash) >= 0 ? "#10B981" : "#EF4444", fontWeight: 600 }}>{signedFmt(e.cash)}</span>
                     </div>
@@ -9388,7 +9458,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
               {reportEntries.filter(e => N(e.pBank) + N(e.ucbBank) + N(e.wooriBank) !== 0).length === 0
                 ? <EmptyState message="No bank entries this month / 本月无银行记录" />
                 : reportEntries.filter(e => N(e.pBank) + N(e.ucbBank) + N(e.wooriBank) !== 0).map(e => (
-                    <div key={e.id} style={{ display: "flex", justifyContent: "space-between", padding: "5px 0", borderBottom: "1px solid #1E2330", fontSize: 12 }}>
+                    <div key={e.id} style={{ display: "flex", justifyContent: "space-between", padding: "5px 0", borderBottom: "1px solid #26334F", fontSize: 12 }}>
                       <span style={{ color: "#94A3B8" }}>{e.description}</span>
                       <span className="mono" style={{ fontSize: 11 }}>
                         {N(e.pBank) !== 0 && <span style={{ color: N(e.pBank) >= 0 ? "#10B981" : "#EF4444", fontWeight: 600 }}>P:{signedFmt(e.pBank)}</span>}
@@ -9441,7 +9511,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
           {/* Category Breakdown */}
           {dailyCatSummary.length > 0 && (
             <div className="card" style={{ padding: 0, marginBottom: 20, overflow: "hidden" }}>
-              <div style={{ padding: "12px 16px", borderBottom: "1px solid #1E2330", display: "flex", alignItems: "center", gap: 8 }}>
+              <div style={{ padding: "12px 16px", borderBottom: "1px solid #26334F", display: "flex", alignItems: "center", gap: 8 }}>
                 <span style={{ fontSize: 13, fontWeight: 600, color: "#E2E8F0" }}>By Category</span>
                 <span style={{ fontSize: 12, color: "#475569" }}>/ 按类别</span>
               </div>
@@ -9452,7 +9522,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
                 const typeZh = isIncome ? "收入" : isExpense ? "支出" : "混合";
                 const accentColor = isIncome ? "#10B981" : isExpense ? "#EF4444" : "#38BDF8";
                 return (
-                  <div key={c.cat} style={{ borderBottom: "1px solid #1E2330", background: idx % 2 === 0 ? "transparent" : "rgba(255,255,255,0.01)" }}>
+                  <div key={c.cat} style={{ borderBottom: "1px solid #26334F", background: idx % 2 === 0 ? "transparent" : "rgba(255,255,255,0.01)" }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px 16px" }}>
                       <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                         <div style={{ width: 3, height: 16, borderRadius: 2, background: accentColor }} />
@@ -9485,7 +9555,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
 
           {/* Full daily ledger table */}
           <div className="card" style={{ overflow: "hidden" }}>
-            <div style={{ padding: "12px 16px", borderBottom: "1px solid #1E2330", display: "flex", alignItems: "center", gap: 8 }}>
+            <div style={{ padding: "12px 16px", borderBottom: "1px solid #26334F", display: "flex", alignItems: "center", gap: 8 }}>
               <span style={{ fontSize: 13, fontWeight: 600, color: "#E2E8F0" }}>All Entries</span>
               <span style={{ fontSize: 12, color: "#475569" }}>/ 全部记录</span>
               <span style={{ fontSize: 11, color: "#334155", marginLeft: 4 }}>— {reportDate}</span>
@@ -9535,7 +9605,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
                 </tbody>
                 {dailyEntries.length > 0 && (
                   <tfoot>
-                    <tr style={{ background: "#0A0C12", borderTop: "1px solid #1E2330" }}>
+                    <tr style={{ background: "#0A0C12", borderTop: "1px solid #26334F" }}>
                       <td colSpan={3} style={{ fontFamily: "IBM Plex Mono", fontSize: 11, color: "#475569", fontWeight: 600, letterSpacing: "0.03em" }}>Day Totals / 当日合计</td>
                       <td style={{ textAlign: "right" }}><span className="mono" style={{ color: "#10B981", fontWeight: 700 }}>{moneyFmt(dDebit)}</span></td>
                       <td style={{ textAlign: "right" }}><span className="mono" style={{ color: "#F87171", fontWeight: 700 }}>{moneyFmt(dCredit)}</span></td>
@@ -9571,7 +9641,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
               {/* Category Selection */}
               <div>
                 <label className="form-label" style={{ marginBottom: 8, display: "block" }}>Select Category / 选择类别</label>
-                <div style={{ border: "1px solid #1E2330", borderRadius: 8, background: "#0D0F14", maxHeight: 200, overflowY: "auto", padding: "6px 0" }}>
+                <div style={{ border: "1px solid #26334F", borderRadius: 8, background: "#0E1629", maxHeight: 200, overflowY: "auto", padding: "6px 0" }}>
                   {ACCOUNT_CATEGORIES.map(cat => {
                     const isChecked = catSelectedCategories.includes(cat);
                     return (
@@ -9625,7 +9695,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
                 </div>
 
                 {/* Active filter summary */}
-                <div style={{ marginTop: 16, padding: "10px 14px", borderRadius: 8, background: "#0D0F14", border: "1px solid #1E2330", fontSize: 12, color: "#64748B" }}>
+                <div style={{ marginTop: 16, padding: "10px 14px", borderRadius: 8, background: "#0E1629", border: "1px solid #26334F", fontSize: 12, color: "#64748B" }}>
                   <div style={{ fontSize: 10, fontFamily: "IBM Plex Mono", textTransform: "uppercase", letterSpacing: "0.06em", color: "#475569", marginBottom: 6 }}>Filter Summary / 筛选摘要</div>
                   <div><span style={{ color: "#94A3B8" }}>Categories / 类别: </span><span style={{ color: "#8B5CF6", fontWeight: 600 }}>{catSelectedCategories.length === 0 ? "None selected / 未选择" : catSelectedCategories.length === ACCOUNT_CATEGORIES.length ? "All categories / 全部类别" : `${catSelectedCategories.length} selected / 已选`}</span></div>
                   <div style={{ marginTop: 4 }}><span style={{ color: "#94A3B8" }}>Period / 期间: </span><span style={{ color: "#3B82F6", fontWeight: 600, fontFamily: "IBM Plex Mono" }}>
@@ -9696,7 +9766,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
                     return (
                       <div key={c.cat} className="card" style={{ marginBottom: 14, overflow: "hidden" }}>
                         {/* Category header */}
-                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "12px 16px", borderBottom: "1px solid #1E2330", background: "rgba(255,255,255,0.02)" }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "12px 16px", borderBottom: "1px solid #26334F", background: "rgba(255,255,255,0.02)" }}>
                           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                             <div style={{ width: 4, height: 18, borderRadius: 2, background: accentColor, flexShrink: 0 }} />
                             <span style={{ fontSize: 13, fontWeight: 600, color: "#E2E8F0" }}>{c.cat}</span>
@@ -9793,7 +9863,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
           </div>
           <div className="form-group">
             <label className="form-label">SL No. / 序号</label>
-            <input value={form.slNo} readOnly disabled style={{ background: "#0D0F14", color: "#64748B", cursor: "not-allowed" }} />
+            <input value={form.slNo} readOnly disabled style={{ background: "#0E1629", color: "#64748B", cursor: "not-allowed" }} />
           </div>
           <div className="form-group" ref={catDropRef} style={{ position: "relative" }}>
             <label className="form-label">Category / 类别</label>
@@ -9803,7 +9873,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
               style={{
                 display: "flex", alignItems: "center", justifyContent: "space-between",
                 padding: "9px 12px", borderRadius: 8, cursor: "pointer",
-                background: "#111318", border: `1px solid ${catDropOpen ? "#3B82F6" : "#1E2330"}`,
+                background: "#131D33", border: `1px solid ${catDropOpen ? "#3B82F6" : "#26334F"}`,
                 boxShadow: catDropOpen ? "0 0 0 3px rgba(59,130,246,0.12)" : "none",
                 transition: "border-color 0.2s, box-shadow 0.2s", userSelect: "none",
               }}
@@ -9820,12 +9890,12 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
             {catDropOpen && (
               <div style={{
                 position: "absolute", top: "calc(100% + 4px)", left: 0, right: 0,
-                background: "#161A22", border: "1px solid #252B3B", borderRadius: 10,
+                background: "#1A2640", border: "1px solid #34446A", borderRadius: 10,
                 zIndex: 999, boxShadow: "0 8px 32px rgba(0,0,0,0.5)",
                 overflow: "hidden", animation: "fadeIn 0.15s ease",
               }}>
                 {/* Search inside dropdown */}
-                <div style={{ padding: "8px 8px 4px", borderBottom: "1px solid #1E2330" }}>
+                <div style={{ padding: "8px 8px 4px", borderBottom: "1px solid #26334F" }}>
                   <div style={{ position: "relative" }}>
                     <span style={{ position: "absolute", left: 9, top: "50%", transform: "translateY(-50%)", color: "#64748B", display: "flex", pointerEvents: "none" }}>
                       <Icon name="search" size={13} />
@@ -9837,7 +9907,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
                       onChange={e => setCatSearch(e.target.value)}
                       placeholder="Search… / 搜索…"
                       onClick={e => e.stopPropagation()}
-                      style={{ paddingLeft: 30, fontSize: 12, background: "#111318", borderColor: "#1E2330", borderRadius: 6, height: 32 }}
+                      style={{ paddingLeft: 30, fontSize: 12, background: "#131D33", borderColor: "#26334F", borderRadius: 6, height: 32 }}
                     />
                   </div>
                 </div>
@@ -9916,7 +9986,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
                 <option value="Woori Bank">🏦 Woori Bank / 友利银行</option>
               </select>
             </div>
-            <div style={{ padding: "10px 14px", borderRadius: 8, background: "#0D0F14", border: "1px solid #1E2330", fontSize: 12, color: "#94A3B8", fontFamily: "IBM Plex Mono" }}>
+            <div style={{ padding: "10px 14px", borderRadius: 8, background: "#0E1629", border: "1px solid #26334F", fontSize: 12, color: "#94A3B8", fontFamily: "IBM Plex Mono" }}>
               <span style={{ color: "#64748B", fontSize: 11 }}>Effect / 效果: </span>
               <span style={{ color: form.type === "Debit" ? "#10B981" : "#EF4444", fontWeight: 700 }}>
                 {form.type === "Debit" ? "+" : "−"}{curr}{N(form.amount).toLocaleString("en-US", { minimumFractionDigits: 2 })}
@@ -10136,11 +10206,11 @@ export default function App() {
   if (loading) return (
     <>
       <GlobalStyles />
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100vh", background: "#0A0C10", gap: 16 }}>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100vh", background: "#0B1120", gap: 16 }}>
         <div style={{ width: 44, height: 44, borderRadius: 12, background: "linear-gradient(135deg, #3B82F6, #8B5CF6)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, fontWeight: 800, color: "white", fontFamily: "Sora, sans-serif" }}>B</div>
         <div style={{ color: "#E2E8F0", fontSize: 15, fontWeight: 600, fontFamily: "Sora, sans-serif" }}>Loading Hongtai ERP...</div>
         <div style={{ color: "#64748B", fontSize: 12, fontFamily: "IBM Plex Mono, monospace" }}>Connecting to Firebase...</div>
-        <div style={{ width: 160, height: 3, background: "#1E2330", borderRadius: 2, overflow: "hidden", marginTop: 8 }}>
+        <div style={{ width: 160, height: 3, background: "#26334F", borderRadius: 2, overflow: "hidden", marginTop: 8 }}>
           <div style={{ width: "60%", height: "100%", background: "linear-gradient(90deg, #3B82F6, #8B5CF6)", borderRadius: 2, animation: "shimmer 1.5s infinite" }} />
         </div>
       </div>
