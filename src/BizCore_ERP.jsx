@@ -899,7 +899,7 @@ const Sidebar = ({ active, setActive, collapsed, setCollapsed }) => {
     { id: "sales", label: "Sales", icon: "sales" },
     { id: "purchases", label: "Purchases", icon: "purchase" },
     { id: "inventory", label: "Inventory", icon: "inventory" },
-    { id: "warehouse", label: "Warehouse", icon: "warehouse", url: "https://hongtai-store.netlify.app/store.html" },
+    { id: "warehouse", label: "Warehouse", icon: "warehouse", url: "https://yibo-store.netlify.app/" },
     { id: "hr", label: "HR", icon: "hr", url: "https://hongtai-leave.netlify.app/home.html" },
     { id: "customers", label: "Customers", icon: "customers" },
     { id: "suppliers", label: "Suppliers", icon: "suppliers" },
