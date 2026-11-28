@@ -2478,7 +2478,7 @@ const Sales = () => {
                     <td><span className="mono" style={{ fontSize: 12 }}>{sale.date}</span></td>
                     <td>{cust?.name || "—"}</td>
                     <td>{sale.saleType === "advance" ? <span className="badge badge-purple">Payment</span> : sale.saleType === "return" ? <span className="badge badge-danger">Return</span> : sale.saleType === "deducted" ? <span className="badge" style={{ background: "rgba(245,158,11,0.15)", color: "#F59E0B" }}>Deducted</span> : sale.saleType === "aidtds" ? <span className="badge badge-tds">AIT-TDS</span> : <span className="badge badge-gray">{sale.items.length} items</span>}</td>
-                    <td><span className="mono" style={{ color: sale.saleType === "return" ? "#EF4444" : sale.saleType === "deducted" ? "#F59E0B" : sale.saleType === "aidtds" ? "#06B6D4" : "#E2E8F0" }}>{sale.saleType === "advance" ? "—" : sale.saleType === "return" ? `↩ ${curr}${sale.total.toFixed(2)}` : (sale.saleType === "deducted" || sale.saleType === "aidtds") ? `− ${curr}${Math.abs(sale.total).toFixed(2)}` : `${curr}${sale.total.toFixed(2)}`}</span></td>
+                    <td><span className="mono" style={{ color: sale.saleType === "return" ? "#EF4444" : sale.saleType === "deducted" ? "#F59E0B" : sale.saleType === "aidtds" ? "#06B6D4" : "#0F172A" }}>{sale.saleType === "advance" ? "—" : sale.saleType === "return" ? `↩ ${curr}${sale.total.toFixed(2)}` : (sale.saleType === "deducted" || sale.saleType === "aidtds") ? `− ${curr}${Math.abs(sale.total).toFixed(2)}` : `${curr}${sale.total.toFixed(2)}`}</span></td>
                     <td><span className="mono" style={{ color: "#10B981" }}>{(sale.saleType === "return" || sale.saleType === "deducted" || sale.saleType === "aidtds") ? "—" : `${curr}${sale.paid.toFixed(2)}`}</span></td>
                     <td><span className="mono" style={{ color: sale.due > 0 ? "#EF4444" : "#64748B" }}>{(sale.saleType === "advance" || sale.saleType === "return" || sale.saleType === "deducted" || sale.saleType === "aidtds") ? "—" : `${curr}${sale.due.toFixed(2)}`}</span></td>
                     <td><StatusBadge status={sale.status} /></td>
@@ -3440,7 +3440,7 @@ const InvoicePreview = ({ sale }) => {
                 const lineTotal = (it.qty || 0) * (it.price || 0);
                 return (
                   <tr key={i}>
-                    <td style={{ color: "#E2E8F0" }}>{productName}</td>
+                    <td style={{ color: "#0F172A" }}>{productName}</td>
                     <td style={{ textAlign: "right" }}>{it.qty}</td>
                     <td style={{ textAlign: "center" }}><span style={{ display: "inline-block", padding: "2px 8px", background: "rgba(239,68,68,0.1)", border: "1px solid rgba(239,68,68,0.2)", borderRadius: 4, fontSize: 11, color: "#EF4444", fontFamily: "IBM Plex Mono" }}>{it.unit || prod?.unit || "pcs"}</span></td>
                     <td style={{ textAlign: "right", fontFamily: "IBM Plex Mono" }}>{curr}{Number(it.price).toFixed(2)}</td>
@@ -3508,7 +3508,7 @@ const InvoicePreview = ({ sale }) => {
                 const lineTotal = (it.qty || 0) * (it.price || 0) * (1 - (it.discount || 0) / 100);
                 return (
                   <tr key={i}>
-                    <td style={{ color: "#E2E8F0" }}>{productName}</td>
+                    <td style={{ color: "#0F172A" }}>{productName}</td>
                     <td style={{ textAlign: "right" }}>{it.qty}</td>
                     <td style={{ textAlign: "center" }}><span style={{ display: "inline-block", padding: "2px 8px", background: "rgba(16,185,129,0.1)", border: "1px solid rgba(16,185,129,0.2)", borderRadius: 4, fontSize: 11, color: "#10B981", fontFamily: "IBM Plex Mono" }}>{it.unit || prod?.unit || "pcs"}</span></td>
                     <td style={{ textAlign: "right", fontFamily: "IBM Plex Mono" }}>{curr}{Number(it.price).toFixed(2)}</td>
@@ -4212,7 +4212,7 @@ const Purchases = () => {
                     <td><span className="mono" style={{ fontSize: 12 }}>{po.date}</span></td>
                     <td>{sup?.name || "—"}</td>
                     <td>{pType === "advance" ? <span className="badge badge-purple">Payment</span> : pType === "return" ? <span className="badge badge-danger">Return</span> : pType === "deducted" ? <span className="badge" style={{ background: "rgba(245,158,11,0.15)", color: "#F59E0B" }}>Deducted</span> : pType === "aidtds" ? <span className="badge badge-tds">AIT-TDS</span> : <span className="badge badge-gray">{po.items.length} items</span>}</td>
-                    <td><span className="mono" style={{ color: pType === "return" ? "#EF4444" : pType === "deducted" ? "#F59E0B" : pType === "aidtds" ? "#06B6D4" : "#E2E8F0" }}>{pType === "advance" ? "—" : pType === "return" ? `↩ ${curr}${po.total.toFixed(2)}` : (pType === "deducted" || pType === "aidtds") ? `− ${curr}${Math.abs(po.total).toFixed(2)}` : `${curr}${po.total.toFixed(2)}`}</span></td>
+                    <td><span className="mono" style={{ color: pType === "return" ? "#EF4444" : pType === "deducted" ? "#F59E0B" : pType === "aidtds" ? "#06B6D4" : "#0F172A" }}>{pType === "advance" ? "—" : pType === "return" ? `↩ ${curr}${po.total.toFixed(2)}` : (pType === "deducted" || pType === "aidtds") ? `− ${curr}${Math.abs(po.total).toFixed(2)}` : `${curr}${po.total.toFixed(2)}`}</span></td>
                     <td><span className="mono" style={{ color: "#10B981" }}>{(pType === "return" || pType === "deducted" || pType === "aidtds") ? "—" : `${curr}${po.paid.toFixed(2)}`}</span></td>
                     <td><span className="mono" style={{ color: po.due > 0 ? "#EF4444" : "#64748B" }}>{(pType === "advance" || pType === "return" || pType === "deducted" || pType === "aidtds") ? "—" : `${curr}${po.due.toFixed(2)}`}</span></td>
                     <td><StatusBadge status={po.status} /></td>
@@ -5010,7 +5010,7 @@ const Inventory = () => {
                     return (
                       <tr key={p.id} style={{ transition: "background 0.1s" }}>
                         <td style={{ color: "#475569", fontFamily: "IBM Plex Mono", fontSize: 11 }}>{rowNum}</td>
-                        <td style={{ fontWeight: 600, color: "#E2E8F0", maxWidth: 200 }}>{p.name}</td>
+                        <td style={{ fontWeight: 600, color: "#0F172A", maxWidth: 200 }}>{p.name}</td>
                         <td>
                           <span style={{ fontFamily: "IBM Plex Mono", fontSize: 12, background: "#F1F5F9", border: "1px solid #E2E8F0", borderRadius: 5, padding: "2px 7px", color: "#475569" }}>{p.sku}</span>
                         </td>
@@ -5022,8 +5022,8 @@ const Inventory = () => {
                             </span>
                           ) : <span style={{ color: "#475569", fontSize: 12 }}>—</span>}
                         </td>
-                        <td><span style={{ fontFamily: "IBM Plex Mono", fontSize: 12, color: "#94A3B8" }}>{curr}{p.buyPrice.toFixed(2)}</span></td>
-                        <td><span style={{ fontFamily: "IBM Plex Mono", fontSize: 12, color: "#E2E8F0", fontWeight: 600 }}>{curr}{p.sellPrice.toFixed(2)}</span></td>
+                        <td><span style={{ fontFamily: "IBM Plex Mono", fontSize: 12, color: "#475569" }}>{curr}{p.buyPrice.toFixed(2)}</span></td>
+                        <td><span style={{ fontFamily: "IBM Plex Mono", fontSize: 12, color: "#0F172A", fontWeight: 600 }}>{curr}{p.sellPrice.toFixed(2)}</span></td>
                         <td>
                           <div style={{ display: "flex", alignItems: "center", gap: 5 }}>
                             <span style={{ fontFamily: "IBM Plex Mono", fontWeight: 700, fontSize: 14, color: ssColor[ss] }}>{p.stock}</span>
@@ -5308,6 +5308,17 @@ const CustomerLedger = ({ customer }) => {
     return bal + (s.total || 0) - (s.paid || 0);
   }, 0);
 
+  // Period balances (used by the PDF so it follows the selected date range)
+  const balanceOf = (list) => list.reduce((bal, s) => {
+    if (s.saleType === "advance") return bal - (s.paid || 0);
+    if (s.saleType === "return")  return bal - (s.total || 0);
+    return bal + (s.total || 0) - (s.paid || 0);
+  }, 0);
+  const openingBalance = balanceOf(allSales.filter(s => (s.date || "").slice(0, 10) < safeFrom));
+  const closingBalance = balanceOf(allSales.filter(s => (s.date || "").slice(0, 10) <= safeTo));
+  const hasOpening     = allSales.some(s => (s.date || "").slice(0, 10) < safeFrom);
+  const isAllTime      = !hasOpening && !allSales.some(s => (s.date || "").slice(0, 10) > safeTo);
+
   const totalBilled  = filtered.filter(s => s.saleType !== "advance" && s.saleType !== "return" && s.saleType !== "deducted" && s.saleType !== "aidtds").reduce((s, x) => s + (x.total    || 0), 0);
   const totalVAT     = filtered.filter(s => s.saleType !== "advance" && s.saleType !== "return" && s.saleType !== "deducted" && s.saleType !== "aidtds").reduce((s, x) => s + (x.vat      || 0), 0);
   const totalPaid    = filtered.filter(s => s.saleType !== "return" && s.saleType !== "deducted" && s.saleType !== "aidtds").reduce((s, x) => s + (x.paid     || 0), 0);
@@ -5443,7 +5454,7 @@ const CustomerLedger = ({ customer }) => {
     // Build HTML rows — one <tr> per line item (no rowspan → clean print layout)
     const tableRows = (() => {
       const htmlRows = [];
-      let runBalance = 0;
+      let runBalance = openingBalance;   // start from balance carried forward before the period
 
       filtered.forEach(sale => {
         if (sale.saleType === "advance") {
@@ -5624,6 +5635,13 @@ const CustomerLedger = ({ customer }) => {
       });
       return htmlRows.join("");
     })();
+
+    // Opening balance row (balance brought forward from before the selected period)
+    const openingRow = hasOpening ? `
+      <tr style="background:#f8fafc">
+        <td colspan="14" style="font-weight:700;color:#334155">Opening Balance (brought forward before ${safeFrom})</td>
+        <td class="right mono bold" style="color:${openingBalance > 0 ? "#991b1b" : "#065f46"}">${curr}${Math.abs(openingBalance).toFixed(2)}</td>
+      </tr>` : "";
     const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5749,9 +5767,9 @@ const CustomerLedger = ({ customer }) => {
       </div>
     </div>
     <div class="balance-block">
-      <div class="balance-label">Net Balance (All Time)</div>
-      <div class="balance-amount">${curr}${Math.abs(liveBalance).toLocaleString("en-US",{minimumFractionDigits:2})}</div>
-      <div class="balance-status">${liveBalance > 0 ? "● OUTSTANDING DUE" : "✓ ACCOUNT CLEAR"}</div>
+      <div class="balance-label">${isAllTime ? "Net Balance (All Time)" : `Balance as of ${safeTo}`}</div>
+      <div class="balance-amount" style="color:${closingBalance > 0 ? "#991b1b" : "#065f46"}">${curr}${Math.abs(closingBalance).toLocaleString("en-US",{minimumFractionDigits:2})}</div>
+      <div class="balance-status" style="color:${closingBalance > 0 ? "#991b1b" : "#065f46"}">${closingBalance > 0 ? "● OUTSTANDING DUE" : "✓ ACCOUNT CLEAR"}</div>
       <div class="period-tag">${filtered.length} invoice(s) in period</div>
     </div>
   </div>
@@ -5809,7 +5827,7 @@ const CustomerLedger = ({ customer }) => {
       </tr>
     </thead>
     <tbody>
-      ${tableRows || `<tr><td colspan="15" style="text-align:center;color:#9ca3af;padding:24px;font-style:italic">No transactions found in this date range</td></tr>`}
+      ${openingRow}${tableRows || `<tr><td colspan="15" style="text-align:center;color:#9ca3af;padding:24px;font-style:italic">No transactions found in this date range</td></tr>`}
     </tbody>
     <!-- Totals Footer Row -->
     <tfoot>
@@ -5822,18 +5840,18 @@ const CustomerLedger = ({ customer }) => {
         <td>—</td>
         <td class="right mono">${curr}${totalDue.toFixed(2)}</td>
         <td></td>
-        <td class="right mono">${curr}${Math.abs(liveBalance).toFixed(2)}</td>
+        <td class="right mono">${curr}${Math.abs(closingBalance).toFixed(2)}</td>
       </tr>
     </tfoot>
   </table>
 
   <!-- Net Balance Statement -->
-  <div class="net-balance">
+  <div class="net-balance" style="background:${closingBalance > 0 ? "#fff5f5" : "#f0fdf4"}">
     <div>
-      <div class="nb-left">Net Account Balance &nbsp;(All-Time, across all invoices)</div>
-      <div class="nb-sub">${liveBalance > 0 ? "Customer has an outstanding balance payable to you." : liveBalance < 0 ? "Customer has a credit balance (overpaid)." : "Account is fully settled."}</div>
+      <div class="nb-left">${isAllTime ? "Net Account Balance &nbsp;(All-Time, across all invoices)" : `Closing Balance &nbsp;(as of ${safeTo})`}</div>
+      <div class="nb-sub">${closingBalance > 0 ? "Customer has an outstanding balance payable to you." : closingBalance < 0 ? "Customer has a credit balance (overpaid)." : "Account is fully settled."}</div>
     </div>
-    <div class="nb-right">${curr}${Math.abs(liveBalance).toLocaleString("en-US",{minimumFractionDigits:2})} &nbsp;<span style="font-size:13px">${liveBalance > 0 ? "(Due)" : liveBalance < 0 ? "(Credit)" : "(Clear)"}</span></div>
+    <div class="nb-right" style="color:${closingBalance > 0 ? "#991b1b" : "#065f46"}">${curr}${Math.abs(closingBalance).toLocaleString("en-US",{minimumFractionDigits:2})} &nbsp;<span style="font-size:13px">${closingBalance > 0 ? "(Due)" : closingBalance < 0 ? "(Credit)" : "(Clear)"}</span></div>
   </div>
 
   <!-- Signature Row -->
@@ -5994,7 +6012,7 @@ const CustomerLedger = ({ customer }) => {
                     <th style={{ textAlign: "right", minWidth: 88 }}>Subtotal</th>
                     <th style={{ textAlign: "right", minWidth: 72, background: "rgba(245,158,11,0.12)", color: "#F59E0B" }}>{taxName}</th>
                     <th style={{ textAlign: "right", minWidth: 95, background: "rgba(59,130,246,0.12)", color: "#93C5FD" }}>Line Total</th>
-                    <th style={{ textAlign: "right", minWidth: 88, borderLeft: "2px solid #26334F" }}>Paid</th>
+                    <th style={{ textAlign: "right", minWidth: 88, borderLeft: "2px solid #E2E8F0" }}>Paid</th>
                     <th style={{ minWidth: 88 }}>Method</th>
                     <th style={{ textAlign: "right", minWidth: 80 }}>Due</th>
                     <th style={{ minWidth: 78 }}>Status</th>
@@ -6009,22 +6027,22 @@ const CustomerLedger = ({ customer }) => {
                       <tr key={`${row.saleId}-${i}`} style={{ background: rowBg }}>
                         {/* Invoice # — rowspan */}
                         {row.isFirst && (
-                          <td rowSpan={row.rowSpan} style={{ ...monoSm, color: invColor, fontWeight: 700, verticalAlign: "middle", borderRight: "1px solid #26334F", whiteSpace: "nowrap" }}>
+                          <td rowSpan={row.rowSpan} style={{ ...monoSm, color: invColor, fontWeight: 700, verticalAlign: "middle", borderRight: "1px solid #E2E8F0", whiteSpace: "nowrap" }}>
                             {row.invoiceNo}
                           </td>
                         )}
                         {/* Date — rowspan */}
                         {row.isFirst && (
-                          <td rowSpan={row.rowSpan} style={{ ...monoSm, color: "#94A3B8", verticalAlign: "middle", borderRight: "1px solid #26334F", whiteSpace: "nowrap" }}>
+                          <td rowSpan={row.rowSpan} style={{ ...monoSm, color: "#475569", verticalAlign: "middle", borderRight: "1px solid #E2E8F0", whiteSpace: "nowrap" }}>
                             {row.date}
                           </td>
                         )}
                         {/* Product */}
-                        <td style={{ color: row.isAdvance ? "#8B5CF6" : row.isReturn ? "#EF4444" : row.isDeducted ? "#F59E0B" : row.isAidTds ? "#06B6D4" : "#CBD5E1", fontStyle: isSpecial ? "italic" : "normal", fontWeight: isSpecial ? 600 : 400, fontSize: 13 }}>
+                        <td style={{ color: row.isAdvance ? "#8B5CF6" : row.isReturn ? "#EF4444" : row.isDeducted ? "#F59E0B" : row.isAidTds ? "#06B6D4" : "#334155", fontStyle: isSpecial ? "italic" : "normal", fontWeight: isSpecial ? 600 : 400, fontSize: 13 }}>
                           {row.product}
                         </td>
                         {/* Qty */}
-                        <td style={{ textAlign: "center", ...monoSm, color: "#E2E8F0" }}>{row.qty}</td>
+                        <td style={{ textAlign: "center", ...monoSm, color: "#0F172A" }}>{row.qty}</td>
                         {/* Unit */}
                         <td style={{ textAlign: "center" }}>
                           {row.isAdvance ? <span className="badge badge-purple">PAY</span>
@@ -6034,7 +6052,7 @@ const CustomerLedger = ({ customer }) => {
                             : <span className="badge badge-success" style={{ fontSize: 10 }}>{row.unit}</span>}
                         </td>
                         {/* Unit Price */}
-                        <td style={{ textAlign: "right", ...monoSm, color: "#CBD5E1" }}>
+                        <td style={{ textAlign: "right", ...monoSm, color: "#334155" }}>
                           {isSpecial ? "—" : `${curr}${Number(row.price).toFixed(2)}`}
                         </td>
                         {/* Disc% */}
@@ -6042,7 +6060,7 @@ const CustomerLedger = ({ customer }) => {
                           {isSpecial ? "—" : row.discount > 0 ? `${row.discount}%` : "—"}
                         </td>
                         {/* Subtotal (after discount, before VAT) */}
-                        <td style={{ textAlign: "right", ...monoSm, color: "#94A3B8" }}>
+                        <td style={{ textAlign: "right", ...monoSm, color: "#475569" }}>
                           {isSpecial ? "—" : `${curr}${Number(row.itemSubtotal).toFixed(2)}`}
                         </td>
                         {/* VAT (per item, proportional) */}
@@ -6050,12 +6068,12 @@ const CustomerLedger = ({ customer }) => {
                           {isSpecial ? "—" : `${curr}${Number(row.itemVat).toFixed(2)}`}
                         </td>
                         {/* Line Total */}
-                        <td style={{ textAlign: "right", ...monoSm, fontSize: 13, fontWeight: 700, background: "rgba(59,130,246,0.04)", color: row.isAdvance ? "#8B5CF6" : row.isReturn ? "#EF4444" : row.isDeducted ? "#F59E0B" : row.isAidTds ? "#06B6D4" : "#E2E8F0" }}>
+                        <td style={{ textAlign: "right", ...monoSm, fontSize: 13, fontWeight: 700, background: "rgba(59,130,246,0.04)", color: row.isAdvance ? "#8B5CF6" : row.isReturn ? "#EF4444" : row.isDeducted ? "#F59E0B" : row.isAidTds ? "#06B6D4" : "#0F172A" }}>
                           {row.isReturn ? `↩ ${curr}${Number(row.lineTotal).toFixed(2)}` : (row.isDeducted || row.isAidTds) ? `− ${curr}${Math.abs(Number(row.lineTotal)).toFixed(2)}` : `${curr}${Number(row.lineTotal).toFixed(2)}`}
                         </td>
                         {/* Paid — rowspan */}
                         {row.isFirst && (
-                          <td rowSpan={row.rowSpan} style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#10B981", verticalAlign: "middle", borderLeft: "2px solid #26334F" }}>
+                          <td rowSpan={row.rowSpan} style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#10B981", verticalAlign: "middle", borderLeft: "2px solid #E2E8F0" }}>
                             {(row.isReturn || row.isDeducted || row.isAidTds) ? "—" : `${curr}${Number(row.salePaid).toFixed(2)}`}
                           </td>
                         )}
@@ -6088,12 +6106,12 @@ const CustomerLedger = ({ customer }) => {
 
                 {/* ── Period Totals Footer ── */}
                 <tfoot>
-                  <tr style={{ background: "#0E1629", borderTop: "2px solid #26334F" }}>
+                  <tr style={{ background: "#FFFFFF", borderTop: "2px solid #E2E8F0" }}>
                     <td colSpan={7} style={{ ...monoSm, fontWeight: 700, color: "#64748B", textTransform: "uppercase", letterSpacing: "0.06em", padding: "10px 14px" }}>Period Totals</td>
-                    <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#94A3B8", padding: "10px 14px" }}>{curr}{(totalBilled - totalVAT).toFixed(2)}</td>
+                    <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#475569", padding: "10px 14px" }}>{curr}{(totalBilled - totalVAT).toFixed(2)}</td>
                     <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#F59E0B", padding: "10px 14px", background: "rgba(245,158,11,0.06)" }}>{curr}{totalVAT.toFixed(2)}</td>
                     <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#3B82F6", padding: "10px 14px", background: "rgba(59,130,246,0.06)" }}>{curr}{totalBilled.toFixed(2)}</td>
-                    <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#10B981", padding: "10px 14px", borderLeft: "2px solid #26334F" }}>{curr}{totalPaid.toFixed(2)}</td>
+                    <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#10B981", padding: "10px 14px", borderLeft: "2px solid #E2E8F0" }}>{curr}{totalPaid.toFixed(2)}</td>
                     <td style={{ padding: "10px 14px" }} />
                     <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: totalDue > 0 ? "#EF4444" : "#64748B", padding: "10px 14px" }}>{curr}{totalDue.toFixed(2)}</td>
                     <td style={{ padding: "10px 14px" }} />
@@ -6853,7 +6871,7 @@ const SupplierLedger = ({ supplier }) => {
                     <th style={{ textAlign: "center", minWidth: 58 }}>Unit</th>
                     <th style={{ textAlign: "right", minWidth: 90 }}>Unit Price</th>
                     <th style={{ textAlign: "right", minWidth: 95, background: "rgba(16,185,129,0.12)", color: "#6EE7B7" }}>Line Total</th>
-                    <th style={{ textAlign: "right", minWidth: 88, borderLeft: "2px solid #26334F" }}>Paid</th>
+                    <th style={{ textAlign: "right", minWidth: 88, borderLeft: "2px solid #E2E8F0" }}>Paid</th>
                     <th style={{ minWidth: 88 }}>Method</th>
                     <th style={{ textAlign: "right", minWidth: 80 }}>Due</th>
                     <th style={{ minWidth: 78 }}>Status</th>
@@ -6867,19 +6885,19 @@ const SupplierLedger = ({ supplier }) => {
                     return (
                       <tr key={`${row.poId}-${i}`} style={{ background: rowBg }}>
                         {row.isFirst && (
-                          <td rowSpan={row.rowSpan} style={{ ...monoSm, color: idColor, fontWeight: 700, verticalAlign: "middle", borderRight: "1px solid #26334F", whiteSpace: "nowrap" }}>
+                          <td rowSpan={row.rowSpan} style={{ ...monoSm, color: idColor, fontWeight: 700, verticalAlign: "middle", borderRight: "1px solid #E2E8F0", whiteSpace: "nowrap" }}>
                             {row.poId}
                           </td>
                         )}
                         {row.isFirst && (
-                          <td rowSpan={row.rowSpan} style={{ ...monoSm, color: "#94A3B8", verticalAlign: "middle", borderRight: "1px solid #26334F", whiteSpace: "nowrap" }}>
+                          <td rowSpan={row.rowSpan} style={{ ...monoSm, color: "#475569", verticalAlign: "middle", borderRight: "1px solid #E2E8F0", whiteSpace: "nowrap" }}>
                             {row.date}
                           </td>
                         )}
-                        <td style={{ color: row.isAdvance ? "#8B5CF6" : row.isReturn ? "#EF4444" : row.isDeducted ? "#F59E0B" : row.isAidTds ? "#06B6D4" : "#CBD5E1", fontStyle: isSpecial ? "italic" : "normal", fontWeight: isSpecial ? 600 : 400, fontSize: 13 }}>
+                        <td style={{ color: row.isAdvance ? "#8B5CF6" : row.isReturn ? "#EF4444" : row.isDeducted ? "#F59E0B" : row.isAidTds ? "#06B6D4" : "#334155", fontStyle: isSpecial ? "italic" : "normal", fontWeight: isSpecial ? 600 : 400, fontSize: 13 }}>
                           {row.product}
                         </td>
-                        <td style={{ textAlign: "center", ...monoSm, color: "#E2E8F0" }}>{row.qty}</td>
+                        <td style={{ textAlign: "center", ...monoSm, color: "#0F172A" }}>{row.qty}</td>
                         <td style={{ textAlign: "center" }}>
                           {row.isAdvance ? <span className="badge badge-purple">PAY</span>
                             : row.isReturn ? <span className="badge badge-danger">RET</span>
@@ -6887,14 +6905,14 @@ const SupplierLedger = ({ supplier }) => {
                             : row.isAidTds ? <span className="badge badge-tds">TDS</span>
                             : <span className="badge badge-success" style={{ fontSize: 10 }}>{row.unit}</span>}
                         </td>
-                        <td style={{ textAlign: "right", ...monoSm, color: "#CBD5E1" }}>
+                        <td style={{ textAlign: "right", ...monoSm, color: "#334155" }}>
                           {isSpecial ? "—" : `${curr}${Number(row.price).toFixed(2)}`}
                         </td>
-                        <td style={{ textAlign: "right", ...monoSm, fontSize: 13, fontWeight: 700, background: "rgba(16,185,129,0.04)", color: row.isAdvance ? "#8B5CF6" : row.isReturn ? "#EF4444" : row.isDeducted ? "#F59E0B" : row.isAidTds ? "#06B6D4" : "#E2E8F0" }}>
+                        <td style={{ textAlign: "right", ...monoSm, fontSize: 13, fontWeight: 700, background: "rgba(16,185,129,0.04)", color: row.isAdvance ? "#8B5CF6" : row.isReturn ? "#EF4444" : row.isDeducted ? "#F59E0B" : row.isAidTds ? "#06B6D4" : "#0F172A" }}>
                           {row.isReturn ? `↩ ${curr}${Number(row.lineTotal).toFixed(2)}` : (row.isDeducted || row.isAidTds) ? `− ${curr}${Math.abs(Number(row.lineTotal)).toFixed(2)}` : `${curr}${Number(row.lineTotal).toFixed(2)}`}
                         </td>
                         {row.isFirst && (
-                          <td rowSpan={row.rowSpan} style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#10B981", verticalAlign: "middle", borderLeft: "2px solid #26334F" }}>
+                          <td rowSpan={row.rowSpan} style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#10B981", verticalAlign: "middle", borderLeft: "2px solid #E2E8F0" }}>
                             {(row.isReturn || row.isDeducted || row.isAidTds) ? "—" : `${curr}${Number(row.poPaid).toFixed(2)}`}
                           </td>
                         )}
@@ -6923,10 +6941,10 @@ const SupplierLedger = ({ supplier }) => {
                 </tbody>
 
                 <tfoot>
-                  <tr style={{ background: "#0E1629", borderTop: "2px solid #26334F" }}>
+                  <tr style={{ background: "#FFFFFF", borderTop: "2px solid #E2E8F0" }}>
                     <td colSpan={6} style={{ ...monoSm, fontWeight: 700, color: "#64748B", textTransform: "uppercase", letterSpacing: "0.06em", padding: "10px 14px" }}>Period Totals</td>
                     <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#10B981", padding: "10px 14px", background: "rgba(16,185,129,0.06)" }}>{curr}{totalOrdered.toFixed(2)}</td>
-                    <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#3B82F6", padding: "10px 14px", borderLeft: "2px solid #26334F" }}>{curr}{totalPaid.toFixed(2)}</td>
+                    <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: "#3B82F6", padding: "10px 14px", borderLeft: "2px solid #E2E8F0" }}>{curr}{totalPaid.toFixed(2)}</td>
                     <td style={{ padding: "10px 14px" }} />
                     <td style={{ textAlign: "right", ...monoSm, fontWeight: 700, color: totalDue > 0 ? "#EF4444" : "#64748B", padding: "10px 14px" }}>{curr}{totalDue.toFixed(2)}</td>
                     <td style={{ padding: "10px 14px" }} />
@@ -7071,7 +7089,7 @@ const Finance = () => {
               <tr key={e.id}>
                 <td className="mono" style={{ fontSize: 12 }}>{e.date}</td>
                 <td><span className="badge badge-gray">{e.category}</span></td>
-                <td style={{ color: "#94A3B8" }}>{e.note}</td>
+                <td style={{ color: "#475569" }}>{e.note}</td>
                 <td><span className="mono" style={{ color: "#EF4444" }}>{curr}{e.amount.toLocaleString()}</span></td>
               </tr>
             ))}
@@ -7436,7 +7454,7 @@ const Reports = () => {
               {data.products.map(p => {
                 const ss = p.stock === 0 ? "out" : p.stock <= p.minStock ? "low" : "ok";
                 return <tr key={p.id}>
-                  <td style={{ fontWeight: 500, color: "#E2E8F0" }}>{p.name}</td>
+                  <td style={{ fontWeight: 500, color: "#0F172A" }}>{p.name}</td>
                   <td className="mono" style={{ fontSize: 12, color: "#64748B" }}>{p.sku}</td>
                   <td className="mono">{p.stock} {p.unit}</td>
                   <td className="mono" style={{ color: "#64748B" }}>{p.minStock}</td>
@@ -7635,7 +7653,7 @@ const ActivityLogs = () => {
                     <span style={{ fontSize: 12 }}>{log.user}</span>
                   </div>
                 </td>
-                <td style={{ color: "#CBD5E1" }}>{log.action}</td>
+                <td style={{ color: "#334155" }}>{log.action}</td>
                 <td>
                   <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
                     <div style={{ width: 6, height: 6, borderRadius: "50%", background: typeColors[log.type] || "#64748B" }} />
@@ -8177,15 +8195,15 @@ const RecycleBin = () => {
                     return (
                       <tr key={e.id}>
                         <td><input type="checkbox" checked={selected.includes(e.id)} onChange={() => toggleOne(e.id)} style={{ width: 15, height: 15, padding: 0, cursor: "pointer", accentColor: "#3B82F6" }} /></td>
-                        <td><span className="badge" style={{ background: `${meta?.color || "#64748B"}22`, color: meta?.color || "#94A3B8" }}>{typeLabelOf(e)}</span></td>
+                        <td><span className="badge" style={{ background: `${meta?.color || "#64748B"}22`, color: meta?.color || "#475569" }}>{typeLabelOf(e)}</span></td>
                         <td>
                           <div className="mono" style={{ color: "#0F172A", fontWeight: 700, fontSize: 12 }}>{e.label || "—"}</div>
                           {num && num !== e.label && <div className="mono" style={{ fontSize: 10, color: "#64748B" }}>{num}</div>}
                         </td>
-                        <td style={{ color: "#94A3B8", fontSize: 12 }}>{e.sub || "—"}</td>
+                        <td style={{ color: "#475569", fontSize: 12 }}>{e.sub || "—"}</td>
                         <td style={{ textAlign: "right" }} className="mono">{e.amount > 0 ? `${curr}${e.amount.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : "—"}</td>
-                        <td className="mono" style={{ fontSize: 11, color: "#94A3B8", whiteSpace: "nowrap" }}>{fmtDeleted(e.deletedAt)}</td>
-                        <td style={{ fontSize: 12, color: "#94A3B8" }}>{e.deletedBy}</td>
+                        <td className="mono" style={{ fontSize: 11, color: "#475569", whiteSpace: "nowrap" }}>{fmtDeleted(e.deletedAt)}</td>
+                        <td style={{ fontSize: 12, color: "#475569" }}>{e.deletedBy}</td>
                         <td>
                           <div style={{ display: "flex", gap: 6 }}>
                             <button className="btn btn-secondary btn-sm btn-icon" title="View details" onClick={() => setDetail(e)}><Icon name="eye" size={13} /></button>
@@ -9300,7 +9318,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
                   ) : paginated.map(entry => (
                     <tr key={entry.id}>
                       <td><span className="mono" style={{ fontSize: 11 }}>{entry.date}</span></td>
-                      <td><span className="mono" style={{ color: "#94A3B8", fontSize: 11 }}>{entry.slNo}</span></td>
+                      <td><span className="mono" style={{ color: "#475569", fontSize: 11 }}>{entry.slNo}</span></td>
                       <td>
                         <div style={{ color: "#0F172A" }}>{entry.description}</div>
                         {entry.notes && <div style={{ fontSize: 10, color: "#64748B", marginTop: 2 }}>{entry.notes}</div>}
@@ -9319,10 +9337,10 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
                       <td style={{ textAlign: "right" }}>
                         <span className="mono" style={{ color: "#3B82F6", fontWeight: 700 }}>{moneyFmt(entry.runBalance)}</span>
                       </td>
-                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: N(entry.runCash) >= 0 ? "#CBD5E1" : "#EF4444" }}>{moneyFmt(entry.runCash)}</span></td>
-                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: N(entry.runPBank) >= 0 ? "#CBD5E1" : "#EF4444" }}>{moneyFmt(entry.runPBank)}</span></td>
-                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: N(entry.runUcb) >= 0 ? "#CBD5E1" : "#EF4444" }}>{moneyFmt(entry.runUcb)}</span></td>
-                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: N(entry.runWoori) >= 0 ? "#CBD5E1" : "#EF4444" }}>{moneyFmt(entry.runWoori)}</span></td>
+                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: N(entry.runCash) >= 0 ? "#334155" : "#EF4444" }}>{moneyFmt(entry.runCash)}</span></td>
+                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: N(entry.runPBank) >= 0 ? "#334155" : "#EF4444" }}>{moneyFmt(entry.runPBank)}</span></td>
+                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: N(entry.runUcb) >= 0 ? "#334155" : "#EF4444" }}>{moneyFmt(entry.runUcb)}</span></td>
+                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: N(entry.runWoori) >= 0 ? "#334155" : "#EF4444" }}>{moneyFmt(entry.runWoori)}</span></td>
                       <td>
                         <div style={{ display: "flex", gap: 4 }}>
                           <button className="btn btn-secondary btn-sm btn-icon" title="Edit" onClick={() => openEdit(entry)}><Icon name="edit" size={12} /></button>
@@ -9335,7 +9353,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
 
                 {filtered.length > 0 && (
                   <tfoot>
-                    <tr style={{ background: "#0E1629" }}>
+                    <tr style={{ background: "#FFFFFF" }}>
                       <td colSpan={4} style={{ fontFamily: "IBM Plex Mono", fontSize: 11, color: "#64748B", fontWeight: 600, textTransform: "uppercase" }}>Period Totals / 期间合计</td>
                       <td style={{ textAlign: "right" }}>
                         <span className="mono" style={{ color: "#10B981", fontWeight: 700 }}>{moneyFmt(filtered.reduce((s, e) => s + N(e.debit), 0))}</span>
@@ -9605,7 +9623,7 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
                   {dailyEntries.length === 0 ? (
                     <tr><td colSpan={9}><EmptyState icon="log" message="No entries for this date. / 本日无记录。" /></td></tr>
                   ) : dailyEntries.map((entry, idx) => (
-                    <tr key={entry.id} style={{ background: idx % 2 === 0 ? "transparent" : "rgba(255,255,255,0.015)" }}>
+                    <tr key={entry.id} style={{ background: idx % 2 === 0 ? "transparent" : "rgba(15,23,42,0.015)" }}>
                       <td style={{ textAlign: "center" }}><span className="mono" style={{ color: "#475569", fontSize: 11 }}>{entry.slNo}</span></td>
                       <td>
                         <div style={{ color: "#334155" }}>{entry.description}</div>
@@ -9622,23 +9640,23 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
                           {N(entry.credit) > 0 ? moneyFmt(entry.credit) : "—"}
                         </span>
                       </td>
-                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: N(entry.cash) >= 0 ? "#94A3B8" : "#F87171" }}>{moneyFmt(entry.cash)}</span></td>
-                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: N(entry.pBank) >= 0 ? "#94A3B8" : "#F87171" }}>{moneyFmt(entry.pBank)}</span></td>
-                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: N(entry.ucbBank) >= 0 ? "#94A3B8" : "#F87171" }}>{moneyFmt(entry.ucbBank)}</span></td>
-                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: N(entry.wooriBank) >= 0 ? "#94A3B8" : "#F87171" }}>{moneyFmt(entry.wooriBank)}</span></td>
+                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: N(entry.cash) >= 0 ? "#475569" : "#F87171" }}>{moneyFmt(entry.cash)}</span></td>
+                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: N(entry.pBank) >= 0 ? "#475569" : "#F87171" }}>{moneyFmt(entry.pBank)}</span></td>
+                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: N(entry.ucbBank) >= 0 ? "#475569" : "#F87171" }}>{moneyFmt(entry.ucbBank)}</span></td>
+                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: N(entry.wooriBank) >= 0 ? "#475569" : "#F87171" }}>{moneyFmt(entry.wooriBank)}</span></td>
                     </tr>
                   ))}
                 </tbody>
                 {dailyEntries.length > 0 && (
                   <tfoot>
-                    <tr style={{ background: "#0A0C12", borderTop: "1px solid #26334F" }}>
+                    <tr style={{ background: "#0A0C12", borderTop: "1px solid #E2E8F0" }}>
                       <td colSpan={3} style={{ fontFamily: "IBM Plex Mono", fontSize: 11, color: "#475569", fontWeight: 600, letterSpacing: "0.03em" }}>Day Totals / 当日合计</td>
                       <td style={{ textAlign: "right" }}><span className="mono" style={{ color: "#10B981", fontWeight: 700 }}>{moneyFmt(dDebit)}</span></td>
                       <td style={{ textAlign: "right" }}><span className="mono" style={{ color: "#F87171", fontWeight: 700 }}>{moneyFmt(dCredit)}</span></td>
-                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: "#94A3B8" }}>{moneyFmt(dCash)}</span></td>
-                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: "#94A3B8" }}>{moneyFmt(dPBank)}</span></td>
-                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: "#94A3B8" }}>{moneyFmt(dUcb)}</span></td>
-                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: "#94A3B8" }}>{moneyFmt(dWoori)}</span></td>
+                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: "#475569" }}>{moneyFmt(dCash)}</span></td>
+                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: "#475569" }}>{moneyFmt(dPBank)}</span></td>
+                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: "#475569" }}>{moneyFmt(dUcb)}</span></td>
+                      <td style={{ textAlign: "right" }}><span className="mono" style={{ fontSize: 11, color: "#475569" }}>{moneyFmt(dWoori)}</span></td>
                     </tr>
                   </tfoot>
                 )}
@@ -9819,9 +9837,9 @@ ${rows || "<tr><td colspan='11' style='text-align:center;color:#888'>No entries 
                             </thead>
                             <tbody>
                               {c.items.map((entry, idx) => (
-                                <tr key={entry.id} style={{ background: idx%2===0?"transparent":"rgba(255,255,255,0.015)" }}>
-                                  <td><span className="mono" style={{ fontSize: 11, color: "#E2E8F0" }}>{entry.date}</span></td>
-                                  <td style={{ textAlign: "center" }}><span className="mono" style={{ fontSize: 11, color: "#E2E8F0" }}>{entry.slNo}</span></td>
+                                <tr key={entry.id} style={{ background: idx%2===0?"transparent":"rgba(15,23,42,0.015)" }}>
+                                  <td><span className="mono" style={{ fontSize: 11, color: "#0F172A" }}>{entry.date}</span></td>
+                                  <td style={{ textAlign: "center" }}><span className="mono" style={{ fontSize: 11, color: "#0F172A" }}>{entry.slNo}</span></td>
                                   <td>
                                     <div style={{ color: "#0F172A" }}>{entry.description}</div>
                                     {entry.notes && <div style={{ fontSize: 10, color: "#475569", marginTop: 2 }}>{entry.notes}</div>}
