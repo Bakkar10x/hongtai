@@ -8304,7 +8304,7 @@ const LoginScreen = ({ onLogin, loading, isOnline }) => {
 // ============================================================
 // ACCOUNTS & LEDGER
 // ============================================================
-const ACCOUNT_CATEGORIES = ["Raw Material / 原材料","Utilities / 水电费","Transport / 运输","Salary / 工资","Office / 办公","Maintenance / 维护","Investment Fund / 投资基金","Sales Revenue / 销售收入","Bank Deposit / 银行存款","Bank Withdraw / 银行取款","Deposit to Cashier / 存入收银","TDS / 税款扣缴","VAT / 增值税","Rent / 租金","Load/Unload / 装卸费","Loan / 贷款","Other / 其他"];
+const ACCOUNT_CATEGORIES = ["Raw Material / 原材料","Utilities / 水电费","Transport / 运输","Salary / 工资","Office / 办公","Maintenance / 维护","Investment Fund / 投资基金","Sales Revenue / 销售收入","Bank Deposit / 银行存款","Bank Withdraw / 银行取款","Deposit to Cashier / 存入收银","TDS / 税款扣缴","VAT / 增值税","Rent / 租金","Load/Unload / 装卸费","Loan / 贷款","Chinese Person Living Cost / 中方人员生活费","Other / 其他"];
 
 const CAT_MIGRATE = {
   "Raw Material":        "Raw Material / 原材料",
